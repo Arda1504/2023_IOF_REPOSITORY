@@ -108,6 +108,8 @@ MonoBehaviour:
   intro: 0
   black: {fileID: 0}
   anim: {fileID: 0}
+  Music: 1
+  Playerobject: {fileID: 0}
 --- !u!61 &7560370172973124274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143,7 +145,8 @@ AudioSource:
   m_GameObject: {fileID: 7560370172973124273}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 79d5160c9d576a249b5b8ba36392d8a1,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b56f3659350666a4e829cdb1e1ea15af, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

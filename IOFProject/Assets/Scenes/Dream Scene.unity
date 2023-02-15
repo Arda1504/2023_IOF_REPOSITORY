@@ -6366,6 +6366,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8294266, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 79d5160c9d576a249b5b8ba36392d8a1,
+        type: 2}
+    - target: {fileID: 11404316, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: targetAudioSource
+      value: 
+      objectReference: {fileID: 1028873833}
     - target: {fileID: 11439142, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: m_MinHeight
       value: -1
@@ -6648,6 +6657,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+--- !u!82 &1028873833 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8294266, guid: 8a005a9e0713f4cc1b5ad29fb07657d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1028873832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1094891890
 GameObject:
   m_ObjectHideFlags: 0
