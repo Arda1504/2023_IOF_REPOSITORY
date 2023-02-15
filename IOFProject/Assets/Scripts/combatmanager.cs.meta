@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1cf0f18d25c4e204c81f168dc43ea9e0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Characterbattle: {instanceID: 0}
+  - mllhealth: {fileID: 5501461403762860193, guid: 9fe4cc9fb3fa5fa43a2f2354fb5a1dfa,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

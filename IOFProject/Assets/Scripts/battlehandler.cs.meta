@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: cd2a5db1835035a489f20d88458372df
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PlayerBattle: {instanceID: 0}
+  - MoleBattle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

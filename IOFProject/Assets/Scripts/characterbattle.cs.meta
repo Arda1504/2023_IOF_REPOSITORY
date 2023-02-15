@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8d21a38ff55c206489d714f55a52c362
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Combatmgr: {fileID: 5738392325001933404, guid: 0cded21b480c57648829cce437d7a3df,
+      type: 3}
+  - mlhealth: {fileID: 5501461403762860193, guid: 9fe4cc9fb3fa5fa43a2f2354fb5a1dfa,
+      type: 3}
+  - player: {fileID: 5609539915250827768, guid: d3999ca2efc362945b533dd1e014585b,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 0877dc4b29855d347beab3b46077bf17
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Okeffect: {instanceID: 0}
+  - Goodeffect: {instanceID: 0}
+  - Perfecteffect: {instanceID: 0}
+  - Missedeffect: {instanceID: 0}
+  - crosshair2: {instanceID: 0}
+  - a2d: {instanceID: 0}
+  - combatmger: {instanceID: 0}
+  - combatmen: {fileID: 8702249433670127919, guid: a093d9293c6a46e469a9d8739b1693fb,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

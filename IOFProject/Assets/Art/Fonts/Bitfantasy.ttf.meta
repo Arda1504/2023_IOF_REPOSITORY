@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e740a9141b9a0ab42a87692ebc95780f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bitfantasy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b6a5f4ee4df5d8c4f8feebdd46b52be3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
