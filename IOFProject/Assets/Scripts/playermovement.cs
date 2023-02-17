@@ -29,6 +29,7 @@ public class playermovement : MonoBehaviour
     public Image black;
     public bool CanMove = true;
     public Flowchart Flwchrt;
+    public GameObject blackscreenobject;
     
     
 
@@ -113,6 +114,18 @@ public class playermovement : MonoBehaviour
         else
         {
             CanMove = true;
+        }
+    }
+
+    public void ToggleBlackscreen()
+    {
+        if (blackscreenobject.gameObject.activeInHierarchy)
+        {
+            blackscreenobject.gameObject.SetActive(false);
+        }
+        else
+        {
+            blackscreenobject.gameObject.SetActive(true);
         }
     }
     private void FixedUpdate()

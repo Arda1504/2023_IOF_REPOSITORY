@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Fungus;
 
 public class battlehandler : MonoBehaviour
 {
@@ -35,6 +36,9 @@ public class battlehandler : MonoBehaviour
     public Button LeftSelect;
     public Button MidSelect;
     public Button RightSelect;
+    public playermovement Plymvt;
+    public GameObject AngryGuys;
+    public Flowchart Flwchrt;
 
 
 
@@ -152,5 +156,9 @@ public class battlehandler : MonoBehaviour
         StopAllAudio();
         Music.Play();
         Debug.Log("musicplaty");
+        //Change Tavern Background
+        AngryGuys.SetActive(false);
+        Plymvt.ToggleBlackscreen();
+        Flwchrt.SendFungusMessage("BarKeep");
     }
 }
