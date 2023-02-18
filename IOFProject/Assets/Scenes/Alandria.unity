@@ -2428,29 +2428,28 @@ GameObject:
   - component: {fileID: 513206314}
   - component: {fileID: 513206317}
   - component: {fileID: 513206319}
-  - component: {fileID: 513206326}
-  - component: {fileID: 513206325}
-  - component: {fileID: 513206324}
-  - component: {fileID: 513206323}
-  - component: {fileID: 513206322}
-  - component: {fileID: 513206321}
-  - component: {fileID: 513206320}
   - component: {fileID: 513206332}
-  - component: {fileID: 513206331}
-  - component: {fileID: 513206330}
-  - component: {fileID: 513206329}
+  - component: {fileID: 513206337}
+  - component: {fileID: 513206336}
+  - component: {fileID: 513206335}
   - component: {fileID: 513206334}
   - component: {fileID: 513206333}
-  - component: {fileID: 513206335}
+  - component: {fileID: 513206353}
+  - component: {fileID: 513206352}
+  - component: {fileID: 513206351}
+  - component: {fileID: 513206350}
+  - component: {fileID: 513206349}
+  - component: {fileID: 513206348}
+  - component: {fileID: 513206347}
+  - component: {fileID: 513206346}
+  - component: {fileID: 513206345}
+  - component: {fileID: 513206344}
   - component: {fileID: 513206343}
   - component: {fileID: 513206342}
   - component: {fileID: 513206341}
   - component: {fileID: 513206340}
   - component: {fileID: 513206339}
   - component: {fileID: 513206338}
-  - component: {fileID: 513206337}
-  - component: {fileID: 513206336}
-  - component: {fileID: 513206344}
   m_Layer: 0
   m_Name: Dream Flowchart
   m_TagString: Untagged
@@ -2471,11 +2470,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 317.63425, y: 114.12463}
+  scrollPos: {x: 521.26935, y: 85.267105}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 0.8200002
+  blockViewHeight: 406
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2483,8 +2482,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 513206340}
-  selectedCommands: []
+  - {fileID: 513206337}
+  selectedCommands:
+  - {fileID: 513206343}
   variables:
   - {fileID: 513206304}
   - {fileID: 513206332}
@@ -2557,9 +2557,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 156.75589
+    x: 155.53638
     y: 50.509476
-    width: 140.24388
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2665,342 +2665,6 @@ MonoBehaviour:
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
---- !u!114 &513206320
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 31
-  indentLevel: 1
-  storyText: 'Needless to say, the senate is now on our side in the matter. But this
-    is far, far from how I envisioned it happening. '
-  description: 
-  character: {fileID: 89740268}
-  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &513206321
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 30
-  indentLevel: 1
-  storyText: whatever
-  description: 
-  character: {fileID: 1957811045}
-  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &513206322
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 29
-  indentLevel: 1
-  storyText: 'It was Augustine, Occam. He collapsed in the middle of his proposition
-    to the senate for the dismantling of the Asmodeus Cult. '
-  description: 
-  character: {fileID: 89740268}
-  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &513206323
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 28
-  indentLevel: 1
-  storyText: What poisoning, lord? How could this be?
-  description: 
-  character: {fileID: 1957811045}
-  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &513206324
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 27
-  indentLevel: 1
-  storyText: Your calculations are correct if you intended to arrive at the middle
-    of the conference. But you are right about things having gone awry.
-  description: 
-  character: {fileID: 89740268}
-  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &513206325
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 513206326}
-  clickableObject: {fileID: 1722455492}
-  waitFrames: 1
---- !u!114 &513206326
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 560.4148
-    y: 39.533867
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 26
-  blockName: Mush1
-  description: 
-  eventHandler: {fileID: 513206325}
-  commandList:
-  - {fileID: 513206334}
-  - {fileID: 513206333}
-  - {fileID: 513206335}
-  - {fileID: 513206331}
-  - {fileID: 513206324}
-  - {fileID: 513206323}
-  - {fileID: 513206322}
-  - {fileID: 513206321}
-  - {fileID: 513206320}
-  - {fileID: 513206343}
-  - {fileID: 513206341}
-  - {fileID: 513206339}
-  - {fileID: 513206338}
-  - {fileID: 513206336}
-  - {fileID: 513206329}
-  - {fileID: 513206330}
---- !u!114 &513206329
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 36
-  indentLevel: 1
-  variable: {fileID: 513206332}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &513206330
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 35
-  indentLevel: 0
---- !u!114 &513206331
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513206286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 34
-  indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 513206332}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &513206332
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3028,11 +2692,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 38
-  indentLevel: 1
-  storyText: 'something else
-
-'
+  itemId: 29
+  indentLevel: 0
+  storyText: A tragedy has occurred, one that leaves me with extreme guilt as the
+    chapter master of the Gladio Obscura. A poisoning has occurred in the middle
+    of the Magna Domus.
   description: 
   character: {fileID: 89740268}
   portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
@@ -3054,61 +2718,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 37
+  itemId: 28
   indentLevel: 0
-  compareOperator: 0
-  variable: {fileID: 513206332}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
+  storyText: Salutations Occam. Your calculations are correct if you intended to
+    arrive at the middle of the conference, but that is of no matter.
+  description: 
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206335
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3118,25 +2746,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 39
+  itemId: 27
   indentLevel: 0
+  storyText: 'My liege, what has gone awry? The senate seems to have dispersed much
+    earlier than it should have and there is no sign of the King or my uncle. Could
+    our chrono-meti be miscalibrated? '
+  description: 
+  character: {fileID: 1957811045}
+  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206336
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 47
-  indentLevel: 1
+  parentBlock: {fileID: 513206337}
+  clickableObject: {fileID: 1722455492}
+  waitFrames: 1
 --- !u!114 &513206337
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3151,17 +2795,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 814.0734
-    y: 124.89969
-    width: 120
+    x: 533.73065
+    y: 47.732895
+    width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 46
-  blockName: BeerOption
+  itemId: 26
+  blockName: NocturneTalk
   description: 
-  eventHandler: {fileID: 0}
-  commandList: []
+  eventHandler: {fileID: 513206336}
+  commandList:
+  - {fileID: 513206335}
+  - {fileID: 513206334}
+  - {fileID: 513206333}
+  - {fileID: 513206353}
+  - {fileID: 513206352}
+  - {fileID: 513206351}
+  - {fileID: 513206350}
+  - {fileID: 513206349}
+  - {fileID: 513206348}
+  - {fileID: 513206344}
+  - {fileID: 513206346}
+  - {fileID: 513206347}
+  - {fileID: 513206345}
+  - {fileID: 513206338}
+  - {fileID: 513206342}
+  - {fileID: 513206341}
+  - {fileID: 513206340}
+  - {fileID: 513206339}
+  - {fileID: 513206343}
 --- !u!114 &513206338
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3171,22 +2834,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 45
-  indentLevel: 2
-  text: Heres beer
+  indentLevel: 0
+  storyText: 'I understand. The cult must be behind this, I will swim to them if
+    I must, but they will pay. '
   description: 
-  targetBlock: {fileID: 513206337}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  character: {fileID: 1957811045}
+  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206339
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3196,61 +2862,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 44
-  indentLevel: 1
-  compareOperator: 0
-  variable: {fileID: 513206304}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
+  indentLevel: 0
+  storyText: 'Now go, you will be briefed on further details aboard the Dolos by
+    Athelas. And may the spirits guide your journey, Occam. '
+  description: 
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206340
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3260,22 +2890,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 800.6577
-    y: 44.411934
-    width: 124.39023
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
   itemId: 43
-  blockName: Mushoption2
+  indentLevel: 0
+  storyText: As you know the Isles of Ferum is where the Cult operates from, it is
+    a chaotic place and our only possible ally there is the Duke of Hazzard. Start
+    from there.
   description: 
-  eventHandler: {fileID: 0}
-  commandList: []
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206341
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3285,22 +2919,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 42
-  indentLevel: 1
-  text: 'No I don''t agree '
+  indentLevel: 0
+  storyText: 'In any case, I have been keeping a ship and crew ready for the past
+    month in case we have a chance like this. '
   description: 
-  targetBlock: {fileID: 513206340}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206342
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3310,23 +2947,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 799.4391
-    y: -48.271004
-    width: 140.24388
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
   itemId: 41
-  blockName: MushOptionYes
+  indentLevel: 0
+  storyText: "Calm down Occam, you aren\u2019t in the army anymore. We do not engage
+    in theatrics; we are to remain inconspicuous. "
   description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 513206344}
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206343
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3336,25 +2975,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 513206286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 40
-  indentLevel: 1
-  text: Yes I agree
+  indentLevel: 0
+  storyText: Understood. Thank you, lord.
   description: 
-  targetBlock: {fileID: 513206342}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  character: {fileID: 1957811045}
+  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &513206344
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3364,14 +3005,262 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 48
+  itemId: 39
   indentLevel: 0
-  storyText: 'Yes I agree
-
-'
+  storyText: "Far from it, but do not worry. He lives. Alandria\u2019s best are taking
+    care of him right now."
+  description: 
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206345
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  storyText: I . . .
   description: 
   character: {fileID: 1957811045}
   portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206346
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  storyText: '*deep sigh* That relieves me to some degree, may I be excused to see
+    him, lord?'
+  description: 
+  character: {fileID: 1957811045}
+  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206347
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  storyText: I am afraid not, Occam. I am sorry. There is not a moment to waste,
+    we must take advantage of the senate having finally folded. You are to be shipped
+    out post haste lest they change their minds.
+  description: 
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206348
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  storyText: My . . . my uncle . . . Is he well?
+  description: 
+  character: {fileID: 1957811045}
+  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206349
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  storyText: 'Needless to say, the senate is now on our side in the matter. But this
+    is far, far from how I envisioned it happening. '
+  description: 
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206350
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  storyText: 'It was Augustine, Occam. He collapsed in the middle of his proposition
+    to the senate for combatting the Asmodeus Cult. '
+  description: 
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206351
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  storyText: What poisoning, lord? How could this be?
+  description: 
+  character: {fileID: 1957811045}
+  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206352
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 0
+  storyText: What . . .
+  description: 
+  character: {fileID: 1957811045}
+  portrait: {fileID: 21300000, guid: b061171ddbc4f0446bf8fdb0f2f2c6c0, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &513206353
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513206286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 30
+  indentLevel: 0
+  storyText: ' In the middle of the capital no less, in the presence of the King
+    spirits be damned! '
+  description: 
+  character: {fileID: 89740268}
+  portrait: {fileID: 21300000, guid: ac390cf26bed14969960a6bb4e6b02a2, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
