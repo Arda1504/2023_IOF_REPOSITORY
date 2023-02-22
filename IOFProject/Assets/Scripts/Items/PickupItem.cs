@@ -48,6 +48,11 @@ public class PickupItem : MonoBehaviour
             {
                 GameManager.instance.hasCoin = true;
             }
+
+            if(itemData.itemName == "Cheese")
+            {
+                Flowchart.SetBooleanVariable("Cheese", true);
+            }
             
         }
     }

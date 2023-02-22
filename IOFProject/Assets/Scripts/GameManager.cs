@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     public characterbattle Charbtl;
     public bool hasAle = false;
     public bool hasCoin = false;
+    public Item Cheese;
+    public Item Ale;
+    public Item Mouse;
     private void Awake()
     {
         if(instance == null)
@@ -130,6 +133,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Aletime");
             StartCoroutine(AleInteractCom());
             hasAle = false;
+            instance.RemoveItem(Ale);
         }
         
     }
@@ -142,4 +146,9 @@ public class GameManager : MonoBehaviour
         AleCombatText.SetActive(false);
     }
 
+    public void GiveMouseCheese()
+    {
+        instance.RemoveItem(Cheese);
+        instance.AddItem(Mouse);
+    }
 }
