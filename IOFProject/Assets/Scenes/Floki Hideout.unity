@@ -2352,7 +2352,8 @@ MonoBehaviour:
   nameText: Floki
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 82e209fb04e7f1543bfab91187ab911f, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -21789,7 +21790,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1076.0106
     y: -6.2048035
-    width: 129.31029
+    width: 126.31578
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21871,7 +21872,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1114.628
     y: 97.9337
-    width: 163.79303
+    width: 163.15787
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21912,7 +21913,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -68.78874
     y: -51.79648
-    width: 191.37921
+    width: 185.52629
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21949,7 +21950,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 113.84953
     y: -173.04861
-    width: 189.65508
+    width: 188.15787
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22246,7 +22247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.61417
     y: -54.62626
-    width: 124.13788
+    width: 122.36841
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22418,7 +22419,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.14372
     y: -106.39092
-    width: 174.13785
+    width: 169.73682
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22750,7 +22751,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 578.55524
     y: -112.27338
-    width: 179.31026
+    width: 173.6842
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23029,7 +23030,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 617.3792
     y: 55.96185
-    width: 160.34476
+    width: 156.57893
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23112,7 +23113,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 267.824
     y: 60.774765
-    width: 153.44821
+    width: 149.99998
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23331,7 +23332,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 92.16623
     y: 56.675255
-    width: 129.31029
+    width: 124.99999
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23930,7 +23931,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 458.1656
     y: 208.84149
-    width: 156.89648
+    width: 153.94736
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24027,7 +24028,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 119.81006
     y: 223.90991
-    width: 205.1723
+    width: 206.57892
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24850,8 +24851,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -770.0894
-    y: 315.0537
+    x: -552.98444
+    y: 159.7905
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -24880,7 +24881,7 @@ MonoBehaviour:
   storyText: Let's do this
   description: 
   character: {fileID: 253487486}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 82e209fb04e7f1543bfab91187ab911f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
