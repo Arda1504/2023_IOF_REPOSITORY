@@ -53,6 +53,11 @@ public class PickupItem : MonoBehaviour
             {
                 Flowchart.SetBooleanVariable("Cheese", true);
             }
+
+            if(itemData.itemName == "Mouse")
+            {
+                Flowchart.SetBooleanVariable("Mouse", true);
+            }
             
         }
     }

@@ -151,4 +151,9 @@ public class GameManager : MonoBehaviour
         instance.RemoveItem(Cheese);
         instance.AddItem(Mouse);
     }
+
+    public void UseMouse()
+    {
+        instance.RemoveItem(Mouse);
+    }
 }
