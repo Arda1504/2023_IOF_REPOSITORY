@@ -39,6 +39,8 @@ public class battlehandler : MonoBehaviour
     public playermovement Plymvt;
     public GameObject AngryGuys;
     public Flowchart Flwchrt;
+    public bool FlokiFight;
+    public GameObject FlokiSprite;
 
 
 
@@ -95,18 +97,33 @@ public class battlehandler : MonoBehaviour
         {
             position = new Vector3(2f, 1);
         }
-      
-        //Instantiate(MoleBattle, new Vector3(3.5f, 1), Quaternion.identity);
-        CloneMole = Instantiate(MoleBtl, new Vector3(2f, 1), Quaternion.identity);
-        CloneMole.GetComponent<molehealth>().batlehan = this;
-        CloneMoleTwo = Instantiate(MoleBtl, new Vector3(4f, 1), Quaternion.identity);
-        CloneMoleTwo.GetComponent<molehealth>().batlehan = this;
-        CloneMoleThree = Instantiate(MoleBtl, new Vector3(6f, 1), Quaternion.identity);
-        CloneMoleThree.GetComponent<molehealth>().batlehan = this;
-        GameObject playerbattle = Instantiate(PlayerBattle, position, Quaternion.identity).gameObject;
-        playerbattle.GetComponent<characterbattle>().mlhealth = CloneMole.GetComponent<molehealth>();
-        playerbattle.GetComponent<characterbattle>().btlhand = this;
 
+        if (FlokiFight)
+        {
+            //Instantiate(MoleBattle, new Vector3(3.5f, 1), Quaternion.identity);
+            CloneMole = Instantiate(FlokiSprite, new Vector3(2f, 1), Quaternion.identity);
+            CloneMole.GetComponent<molehealth>().batlehan = this;
+            CloneMoleTwo = Instantiate(MoleBtl, new Vector3(4f, 1), Quaternion.identity);
+            CloneMoleTwo.GetComponent<molehealth>().batlehan = this;
+            CloneMoleThree = Instantiate(MoleBtl, new Vector3(6f, 1), Quaternion.identity);
+            CloneMoleThree.GetComponent<molehealth>().batlehan = this;
+            GameObject playerbattle = Instantiate(PlayerBattle, position, Quaternion.identity).gameObject;
+            playerbattle.GetComponent<characterbattle>().mlhealth = CloneMole.GetComponent<molehealth>();
+            playerbattle.GetComponent<characterbattle>().btlhand = this;
+        }
+        else
+        {
+            //Instantiate(MoleBattle, new Vector3(3.5f, 1), Quaternion.identity);
+            CloneMole = Instantiate(MoleBtl, new Vector3(2f, 1), Quaternion.identity);
+            CloneMole.GetComponent<molehealth>().batlehan = this;
+            CloneMoleTwo = Instantiate(MoleBtl, new Vector3(4f, 1), Quaternion.identity);
+            CloneMoleTwo.GetComponent<molehealth>().batlehan = this;
+            CloneMoleThree = Instantiate(MoleBtl, new Vector3(6f, 1), Quaternion.identity);
+            CloneMoleThree.GetComponent<molehealth>().batlehan = this;
+            GameObject playerbattle = Instantiate(PlayerBattle, position, Quaternion.identity).gameObject;
+            playerbattle.GetComponent<characterbattle>().mlhealth = CloneMole.GetComponent<molehealth>();
+            playerbattle.GetComponent<characterbattle>().btlhand = this;
+        }
     }
 
     public void ShowTargets()
