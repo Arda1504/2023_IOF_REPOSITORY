@@ -17,6 +17,7 @@ public class TeleportScript : MonoBehaviour
     public WaitForSeconds one;
     public bool Music = true;
     public GameObject Playerobject;
+    public bool StopMusic = false;
 
     void StopAllAudio()
     {
@@ -58,6 +59,11 @@ public class TeleportScript : MonoBehaviour
                 {
                     NewMusic.Play();
                 }
+            }
+
+            if(StopMusic)
+            {
+                StopAllAudio();
             }
             other.transform.position = new Vector3(TeleportTo.transform.position.x, TeleportTo.transform.position.y, TeleportTo.transform.position.z);
 
