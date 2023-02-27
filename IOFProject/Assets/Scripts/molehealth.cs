@@ -10,6 +10,7 @@ public class molehealth : MonoBehaviour
     GameObject CloneMole;
     public characterbattle Chbtl;
     public GameObject PlayerCombatobject;
+    public Sprite FlokiGruntSprite;
 
 
     // Start is called before the first frame update
@@ -66,5 +67,16 @@ public class molehealth : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(2);
         Destroy(this.gameObject);
+    }
+
+    public void FlokiGrunt()
+    {
+        Molehealth = 6f;
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = FlokiGruntSprite;
+    }
+
+    public void FlokiHimself()
+    {
+        Molehealth = 15f;
     }
 }

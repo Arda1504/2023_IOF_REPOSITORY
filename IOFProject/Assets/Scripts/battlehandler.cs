@@ -105,11 +105,14 @@ public class battlehandler : MonoBehaviour
             CloneMole.GetComponent<molehealth>().batlehan = this;
             CloneMoleTwo = Instantiate(MoleBtl, new Vector3(4f, 1), Quaternion.identity);
             CloneMoleTwo.GetComponent<molehealth>().batlehan = this;
+            
             CloneMoleThree = Instantiate(MoleBtl, new Vector3(6f, 1), Quaternion.identity);
             CloneMoleThree.GetComponent<molehealth>().batlehan = this;
+            
             GameObject playerbattle = Instantiate(PlayerBattle, position, Quaternion.identity).gameObject;
             playerbattle.GetComponent<characterbattle>().mlhealth = CloneMole.GetComponent<molehealth>();
             playerbattle.GetComponent<characterbattle>().btlhand = this;
+            StartCoroutine(FlokiFightTime());
         }
         else
         {
@@ -177,5 +180,13 @@ public class battlehandler : MonoBehaviour
         AngryGuys.SetActive(false);
         Plymvt.ToggleBlackscreen();
         Flwchrt.SendFungusMessage("BarKeep");
+    }
+
+    IEnumerator FlokiFightTime()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        CloneMoleTwo.GetComponent<molehealth>().FlokiGrunt();
+        CloneMoleThree.GetComponent<molehealth>().FlokiGrunt();
+        CloneMole.GetComponent<molehealth>().FlokiHimself();
     }
 }

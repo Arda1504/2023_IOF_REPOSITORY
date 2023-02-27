@@ -120,3 +120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Molehealth: -1
   batlehan: {fileID: 0}
+  Chbtl: {fileID: 0}
+  PlayerCombatobject: {fileID: 0}
+  FlokiGruntSprite: {fileID: 21300000, guid: ea81995da22269a4eaa99d1b2b455a2d, type: 3}

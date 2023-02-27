@@ -60,7 +60,7 @@ public class characterbattle : MonoBehaviour
         mlhealth = btlhand.CloneMole.GetComponent<molehealth>();
         mlhealth2 = btlhand.CloneMoleTwo.GetComponent<molehealth>();
         mlhealth3 = btlhand.CloneMoleThree.GetComponent<molehealth>();
-        mlhealth.Molehealth = 2f;
+        //mlhealth.Molehealth = 2f;
         //Debug.Log(Combatmgr.punchdamage);
         //playerhealth = 10f;
         btlhand.playerhealth = 10f;
