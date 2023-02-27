@@ -91,7 +91,10 @@ public class characterbattle : MonoBehaviour
             GameObject Moleattack1object = Instantiate(moleattack1, new Vector3(6.21f, 0.36f, 0), Quaternion.identity);
             mlatk1mger = Moleattack1object.GetComponent<moleattack1combatmger>();
             mlatk1mger.chrbtl = this;
-
+            if(btlhand.FlokiFight == true)
+            {
+                mlatk1mger.FlokiFight = true;
+            }
 
             GameObject Moleattack1holder = Instantiate(moleattack1holder, new Vector3(-3.5f, 0.36f, 0), Quaternion.identity);
             mlatk1mger.mlattackhlder = Moleattack1holder.gameObject;

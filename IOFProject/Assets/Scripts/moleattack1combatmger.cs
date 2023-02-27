@@ -12,6 +12,8 @@ public class moleattack1combatmger : MonoBehaviour
     public GameObject holder;
     public GameObject mlattackhlder;
     public characterbattle chrbtl;
+    public float FlokiGoonMaxdamage = 2;
+    public bool FlokiFight = false;
 
     public float punchdamage;
     // Start is called before the first frame update
@@ -33,25 +35,43 @@ public class moleattack1combatmger : MonoBehaviour
     public void Perfecthit()
     {
         Debug.Log("Perfect boi");
-        punchvar = maxdamage * 0.3f;
-        punchdamage = Mathf.Round(punchvar);
-        Debug.Log(punchdamage);
+        if(FlokiFight)
+        {
+            punchdamage = 1f;
+            chrbtl.getmlattack1();
+            Destroy(mlattackhlder.gameObject);
+        }
+        else
+        {
+            punchvar = maxdamage * 0.3f;
+            punchdamage = Mathf.Round(punchvar);
+            Debug.Log(punchdamage);
 
-        Destroy(mlattackhlder.gameObject);
-        //Characterbattle.PerfectPunch();
-        chrbtl.getmlattack1();
+            Destroy(mlattackhlder.gameObject);
+            //Characterbattle.PerfectPunch();
+            chrbtl.getmlattack1();
+        }
+        
     }
 
     public void Missedhit()
     {
-        punchvar = maxdamage;
-        punchdamage = Mathf.Round(punchvar);
-        Debug.Log(punchdamage);
+        if (FlokiFight)
+        {
+            punchdamage = 2f;
+            chrbtl.getmlattack1();
+            Destroy(mlattackhlder.gameObject);
+        }
+        else
+        {
+            punchvar = maxdamage * 1f;
+            punchdamage = Mathf.Round(punchvar);
+            Debug.Log(punchdamage);
 
-        Destroy(mlattackhlder.gameObject);
-
-        //Characterbattle.MissedPunch();
-        chrbtl.getmlattack1();
+            Destroy(mlattackhlder.gameObject);
+            //Characterbattle.PerfectPunch();
+            chrbtl.getmlattack1();
+        }
     }
 
     public void Hit()
