@@ -31,6 +31,7 @@ public class playermovement : MonoBehaviour
     public Flowchart Flwchrt;
     public GameObject blackscreenobject;
     public float playerhealth = 10f;
+    public GameObject Somethingtodestroy;
     
     
 
@@ -174,7 +175,7 @@ public class playermovement : MonoBehaviour
         {
             CanMove = false;
             Camshakescrpt.ShakeEvent();
-
+            HammerUsed();
             yield return new WaitForSecondsRealtime(1f);
             CanMove = true;
             if(ShedUsed == false)
@@ -184,7 +185,33 @@ public class playermovement : MonoBehaviour
                 Flwchrt.SetBooleanVariable("ShedDone", true);
             }
         }
+       
         
+    }
+
+    public void HammerUsed()
+    {
+        if(Somethingtodestroy != null)
+        {
+            Destroy(Somethingtodestroy.gameObject);
+        }
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Destroyable")
+        {
+            Somethingtodestroy = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Destroyable")
+        {
+            Somethingtodestroy = null;
+        }
     }
 
 }
