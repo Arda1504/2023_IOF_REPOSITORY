@@ -368,7 +368,7 @@ public class characterbattle : MonoBehaviour
         {
             Audiosource.PlayOneShot(Enemyweakhit);
         }
-        btlhand.playerhealth -= mlatk1mger.punchdamage;
+        btlhand.Plymvt.playerhealth -= mlatk1mger.punchdamage;
         Debug.Log(btlhand.playerhealth);
         Destroy(mlatk1mger.gameObject);
         GameObject damagenumber = Instantiate(damagenumberprefab, new Vector3(-165f, 50f), Quaternion.identity);

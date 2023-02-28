@@ -30,6 +30,7 @@ public class playermovement : MonoBehaviour
     public bool CanMove = true;
     public Flowchart Flwchrt;
     public GameObject blackscreenobject;
+    public float playerhealth = 10f;
     
     
 

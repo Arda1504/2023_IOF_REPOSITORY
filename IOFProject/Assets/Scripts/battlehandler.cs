@@ -41,6 +41,7 @@ public class battlehandler : MonoBehaviour
     public Flowchart Flwchrt;
     public bool FlokiFight;
     public GameObject FlokiSprite;
+    
 
 
 
@@ -66,10 +67,12 @@ public class battlehandler : MonoBehaviour
 
         PlayerCombatobject = GameObject.Find("playerCombat(Clone)");
         Chbtl = PlayerCombatobject.GetComponent<characterbattle>();
+        Plymvt = GameObject.FindGameObjectWithTag("Player").GetComponent<playermovement>();
     }
 
     private void Update()
     {
+        playerhealth = Plymvt.playerhealth;
         healthNumber.SetText(playerhealth.ToString());
     }
 
