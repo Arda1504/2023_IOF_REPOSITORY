@@ -10545,12 +10545,12 @@ PrefabInstance:
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -566.51
+      value: -673.1
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.27
+      value: -2.89
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -14184,6 +14184,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75ff317ef4c608c4f9dff02505f9766a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1171501968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171501956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5fdb0c34bfb7646ad2a2c6f8ee3415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1173089535
@@ -18160,7 +18172,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457178028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa5fdb0c34bfb7646ad2a2c6f8ee3415, type: 3}
   m_Name: 
@@ -29119,6 +29131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2087508684}
   - component: {fileID: 2087508683}
+  - component: {fileID: 2087508685}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -29154,6 +29167,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2087508685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087508682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5fdb0c34bfb7646ad2a2c6f8ee3415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2094480638
 GameObject:
   m_ObjectHideFlags: 0
@@ -30309,7 +30334,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 232615492, guid: 09b74f10cbd755e439578c8c7f1819a5, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2601295879893732344, guid: 09b74f10cbd755e439578c8c7f1819a5,
         type: 3}

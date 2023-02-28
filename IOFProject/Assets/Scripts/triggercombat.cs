@@ -23,7 +23,10 @@ public class triggercombat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (player == null || player == !isActiveAndEnabled)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
 
     void StopAllAudio()
@@ -42,6 +45,7 @@ public class triggercombat : MonoBehaviour
         {
             StartCoroutine(CombatTransition());
         } 
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

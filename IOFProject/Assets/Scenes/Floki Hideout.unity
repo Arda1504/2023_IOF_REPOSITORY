@@ -9966,7 +9966,7 @@ PrefabInstance:
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -693.5
+      value: -667.63
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -10017,6 +10017,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: player 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871614441348514173, guid: 040b03807980b1e41bfbfd28ee99aa4d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871614441348514173, guid: 040b03807980b1e41bfbfd28ee99aa4d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8871614442168941554, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -10606,7 +10616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910231168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -683.4, y: 1.04, z: 0}
+  m_LocalPosition: {x: -667.56, y: 1.04, z: 0}
   m_LocalScale: {x: 0.8065535, y: 0.8065535, z: 0.8065535}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15601,7 +15611,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1171501956}
+      objectReference: {fileID: 0}
     - target: {fileID: 7435939943660457326, guid: 2b7dc566c1ca9b64183f95bab98ec2c6,
         type: 3}
       propertyPath: Healthui
@@ -20254,7 +20264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742113356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.3234, y: -4.59, z: 0}
+  m_LocalPosition: {x: 10.35, y: -4.59, z: 0}
   m_LocalScale: {x: 1.67912, y: 1.4338788, z: 1.2398434}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27636,7 +27646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2087508683
 MonoBehaviour:
   m_ObjectHideFlags: 0
