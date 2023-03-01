@@ -86,7 +86,18 @@ public class battlehandler : MonoBehaviour
 
     }
 
-   
+    public void KillFinalFloki()
+    {
+        //PlayeroverCam = playeroverworld.GetComponentInChildren<Camera>();
+        //StartCoroutine(Victory()); uncomment this plz
+
+        LastEnemy = GameObject.Find("Floki Enemy(Clone)");
+        Debug.Log(LastEnemy);
+        StartCoroutine(Victory());
+
+    }
+
+
 
 
 

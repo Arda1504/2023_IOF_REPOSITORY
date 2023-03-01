@@ -11,6 +11,7 @@ public class molehealth : MonoBehaviour
     public characterbattle Chbtl;
     public GameObject PlayerCombatobject;
     public Sprite FlokiGruntSprite;
+    public bool IsFloki = false;
 
 
     // Start is called before the first frame update
@@ -41,9 +42,18 @@ public class molehealth : MonoBehaviour
         }
             else
         {
-            Chbtl.EnemyDowned();
-            batlehan.KillFinal();
-            //batlehan.KillMole();
+            if(IsFloki)
+            {
+                Chbtl.EnemyDowned();
+                batlehan.KillFinalFloki();
+            }
+            else
+            {
+                Chbtl.EnemyDowned();
+                batlehan.KillFinal();
+                //batlehan.KillMole();
+            }
+
         }
             //Debug.Log("dead");
         
@@ -71,12 +81,13 @@ public class molehealth : MonoBehaviour
 
     public void FlokiGrunt()
     {
-        Molehealth = 6f;
+        Molehealth = 4f;
         this.gameObject.GetComponent<SpriteRenderer>().sprite = FlokiGruntSprite;
     }
 
     public void FlokiHimself()
     {
-        Molehealth = 15f;
+        Molehealth = 8f;
+        IsFloki = true;
     }
 }
