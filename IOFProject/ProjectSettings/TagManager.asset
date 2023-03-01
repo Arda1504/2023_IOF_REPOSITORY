@@ -14,11 +14,12 @@ TagManager:
   - music
   - FireObject
   - Destroyable
+  - Border
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ItemsAndBorders
   - Water
   - UI
   - 

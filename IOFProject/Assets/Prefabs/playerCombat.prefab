@@ -257,6 +257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Combatmgr: {fileID: 0}
   mlhealth: {fileID: 0}
+  mlhealth2: {fileID: 0}
+  mlhealth3: {fileID: 0}
   player: {fileID: 0}
   punchvar: 4
   punchdamage: 4
@@ -280,4 +282,11 @@ MonoBehaviour:
   EnemyMissed: {fileID: 8300000, guid: cc8aca3cda5f76048a663529f24dcc68, type: 3}
   Enemyweakhit: {fileID: 8300000, guid: 09deaf123a6cfe34285acec844b020ab, type: 3}
   EnemyAmount: 3
+  Enemypicked: 0
+  LeftSelect: {fileID: 0}
+  MidSelect: {fileID: 0}
+  RightSelect: {fileID: 0}
   playerhealth: 0
+  ItemUi: {fileID: 0}
+  Healthnumberprefab: {fileID: 4626327141295312064, guid: d2a351f6df374ca43a54549896212dfe,
+    type: 3}

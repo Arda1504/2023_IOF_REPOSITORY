@@ -43,14 +43,18 @@ public class characterbattle : MonoBehaviour
     public Button RightSelect;
 
     public float playerhealth;
+    public GameObject ItemUi;
 
-   
+    public GameObject Healthnumberprefab;
+    private GameObject Healthnumber;
+
 
 
     private void Awake()
     {
         Playermovement = GetComponent<playermovement>();
         CombtMenu = GameObject.Find("CombatMenu");
+        
         amountAttacked = 0;
         
     }
@@ -67,6 +71,11 @@ public class characterbattle : MonoBehaviour
         CanEnemy1Attack = true;
         
 
+    }
+
+    public void FindItemsUI()
+    {
+        ItemUi = GameObject.Find("Items Options");
     }
 
     private void Update()
@@ -376,5 +385,13 @@ public class characterbattle : MonoBehaviour
         damagenumbertext.text = mlatk1mger.punchdamage.ToString();
         damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
         //CombtMenu.gameObject.SetActive(true);
+    }
+
+    public void WaitingTimeStartItemUse()
+    {
+        StartCoroutine(Waitingtime());
+        ItemUi.SetActive(false);
+        GameObject Healthnumber = Instantiate(Healthnumberprefab, new Vector3(-165f, 50f), Quaternion.identity);
+        Healthnumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
     }
 }

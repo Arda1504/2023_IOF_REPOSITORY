@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public Item Cheese;
     public Item Ale;
     public Item Mouse;
+    public Item HealthPotion;
+    public playermovement plymvt;
     private void Awake()
     {
         if(instance == null)
@@ -155,5 +157,19 @@ public class GameManager : MonoBehaviour
     public void UseMouse()
     {
         instance.RemoveItem(Mouse);
+    }
+
+    public void HealthPotionCombat()
+    {
+        if (instance.items.Contains(HealthPotion))
+        {
+            Debug.Log("HealthTime");
+            Charbtl.FindItemsUI();
+            instance.RemoveItem(HealthPotion);
+            plymvt.playerhealth += 8f;
+            Charbtl.WaitingTimeStartItemUse();
+            
+        }
+
     }
 }

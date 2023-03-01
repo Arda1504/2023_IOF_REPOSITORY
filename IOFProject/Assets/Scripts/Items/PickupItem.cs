@@ -9,6 +9,7 @@ public class PickupItem : MonoBehaviour
     public Flowchart Flowchart;
     public GameObject Popup;
     public playermovement Plymvmt;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,16 +19,16 @@ public class PickupItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
-            
+
             Destroy(gameObject);
             GameManager.instance.AddItem(itemData);
-            if(itemData.itemName == "Ragged Shirt")
+            if (itemData.itemName == "Ragged Shirt")
             {
                 Flowchart.SetBooleanVariable("Shirt", true);
                 Popup.gameObject.SetActive(true);
@@ -44,22 +45,23 @@ public class PickupItem : MonoBehaviour
                 GameManager.instance.hasAle = true;
             }
 
-            if(itemData.itemName == "Coin")
+            if (itemData.itemName == "Coin")
             {
                 GameManager.instance.hasCoin = true;
             }
 
-            if(itemData.itemName == "Cheese")
+            if (itemData.itemName == "Cheese")
             {
                 Flowchart.SetBooleanVariable("Cheese", true);
             }
 
-            if(itemData.itemName == "Mouse")
+            if (itemData.itemName == "Mouse")
             {
                 Flowchart.SetBooleanVariable("Mouse", true);
             }
-            
+
+
         }
     }
-
+   
 }
