@@ -15,6 +15,7 @@ TagManager:
   - FireObject
   - Destroyable
   - Border
+  - Heart
   layers:
   - Default
   - TransparentFX

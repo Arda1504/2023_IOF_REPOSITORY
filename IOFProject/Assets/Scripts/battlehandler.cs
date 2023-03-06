@@ -41,6 +41,8 @@ public class battlehandler : MonoBehaviour
     public Flowchart Flwchrt;
     public bool FlokiFight;
     public GameObject FlokiSprite;
+    public GameObject Healthtotalobject;
+    public TextMeshProUGUI HealthtotalText;
     
 
 
@@ -68,12 +70,18 @@ public class battlehandler : MonoBehaviour
         PlayerCombatobject = GameObject.Find("playerCombat(Clone)");
         Chbtl = PlayerCombatobject.GetComponent<characterbattle>();
         Plymvt = GameObject.FindGameObjectWithTag("Player").GetComponent<playermovement>();
+        Healthtotalobject = GameObject.Find("HealthOutOf");
+        HealthtotalText = Healthtotalobject.gameObject.GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
     {
         playerhealth = Plymvt.playerhealth;
         healthNumber.SetText(playerhealth.ToString());
+        if(Plymvt.fifteenhealth == true)
+        {
+            HealthtotalText.SetText("/ 15");
+        }
     }
 
     public void KillFinal()

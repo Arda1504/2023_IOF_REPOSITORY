@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using Fungus;
+using TMPro;
 
 public class playermovement : MonoBehaviour
 {
@@ -32,8 +33,12 @@ public class playermovement : MonoBehaviour
     public GameObject blackscreenobject;
     public float playerhealth = 10f;
     public GameObject Somethingtodestroy;
-    
-    
+    public float heartamount = 0;
+    public GameObject HealthPopup;
+    public TextMeshProUGUI HealthPopupText;
+    public bool fifteenhealth = false;
+
+
 
     private void Awake()
     {
@@ -48,6 +53,8 @@ public class playermovement : MonoBehaviour
         ShedUsed = false;
         HasTunic = false;
         
+        
+
     }
   
     
@@ -189,6 +196,25 @@ public class playermovement : MonoBehaviour
         
     }
 
+    public void GetHeart()
+    {
+        heartamount++;
+
+        if (heartamount == 1)
+        {
+            HealthPopup.SetActive(true);
+            HealthPopupText.SetText("You got 1 heart out of 3. Collect all 3 for an increase in max health");
+        }
+
+        if (heartamount == 3)
+        {
+            HealthPopup.SetActive(true);
+            HealthPopupText.SetText("Max health increased!");
+            playerhealth = 15f;
+            fifteenhealth = true;
+        }
+    }
+
     public void HammerUsed()
     {
         if(Somethingtodestroy != null)
@@ -204,6 +230,12 @@ public class playermovement : MonoBehaviour
         {
             Somethingtodestroy = collision.gameObject;
         }
+
+        if(collision.gameObject.tag == "Heart")
+        {
+            GetHeart();
+            Destroy(collision.gameObject);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -213,5 +245,6 @@ public class playermovement : MonoBehaviour
             Somethingtodestroy = null;
         }
     }
+
 
 }
