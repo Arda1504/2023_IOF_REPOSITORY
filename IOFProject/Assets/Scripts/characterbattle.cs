@@ -47,6 +47,9 @@ public class characterbattle : MonoBehaviour
 
     public GameObject Healthnumberprefab;
     private GameObject Healthnumber;
+    public bool HammerAttack = false;
+    public bool FlameHammerAttack = false;
+    public CameraShakeScript Camshake;
 
 
 
@@ -54,6 +57,7 @@ public class characterbattle : MonoBehaviour
     {
         Playermovement = GetComponent<playermovement>();
         CombtMenu = GameObject.Find("CombatMenu");
+        Camshake = GameObject.Find("combatcam").gameObject.GetComponent<CameraShakeScript>();
         
         amountAttacked = 0;
         
@@ -198,40 +202,58 @@ public class characterbattle : MonoBehaviour
     public void OkPunch()
     {
         Audiosource.PlayOneShot(OkAudio);
-        punchvar = maxdamage * 0.15f;
-        punchdamage = Mathf.Round(punchvar);
-        Debug.Log(punchdamage);
-        switch(Enemypicked)
+        if (HammerAttack)
         {
-            case 1f:
-                Punch();
-                break;
-            case 2f:
-                PunchTwo();
-                break;
-            case 3f:
-                PunchThree();
-                break;
+            punchdamage = 1f;
+            HammerAttackTime();
+            HammerAttack = false;
+        }
+        else
+        {
+            punchvar = maxdamage * 0.15f;
+            punchdamage = Mathf.Round(punchvar);
+            Debug.Log(punchdamage);
+            switch (Enemypicked)
+            {
+                case 1f:
+                    Punch();
+                    break;
+                case 2f:
+                    PunchTwo();
+                    break;
+                case 3f:
+                    PunchThree();
+                    break;
+            }
         }
         
     }
     public void GoodPunch()
     {
         Audiosource.PlayOneShot(OkAudio);
-        punchvar = maxdamage * 0.3f;
+        if (HammerAttack)
+        {
+            punchdamage = 2f;
+            HammerAttackTime();
+            HammerAttack = false;
+        }
+        else
+        {
+            punchvar = maxdamage * 0.3f;
         punchdamage = Mathf.Round(punchvar);
         Debug.Log(punchdamage);
-        switch (Enemypicked)
-        {
-            case 1f:
-                Punch();
-                break;
-            case 2f:
-                PunchTwo();
-                break;
-            case 3f:
-                PunchThree();
-                break;
+            switch (Enemypicked)
+            {
+                case 1f:
+                    Punch();
+                    break;
+                case 2f:
+                    PunchTwo();
+                    break;
+                case 3f:
+                    PunchThree();
+                    break;
+            }
         }
         //anim.Play("Player_walk_up", 0, 1f);
 
@@ -239,39 +261,57 @@ public class characterbattle : MonoBehaviour
     public void PerfectPunch()
     {
         Audiosource.PlayOneShot(PerfectAudio);
-        punchvar = maxdamage * 0.4f;
-        punchdamage = Mathf.Round(punchvar);
-        Debug.Log(punchdamage);
-        switch (Enemypicked)
+        if (HammerAttack)
         {
-            case 1f:
-                Punch();
-                break;
-            case 2f:
-                PunchTwo();
-                break;
-            case 3f:
-                PunchThree();
-                break;
+            punchdamage = 3f;
+            HammerAttackTime();
+            HammerAttack = false;
+        }
+        else
+        {
+            punchvar = maxdamage * 0.4f;
+            punchdamage = Mathf.Round(punchvar);
+            Debug.Log(punchdamage);
+            switch (Enemypicked)
+            {
+                case 1f:
+                    Punch();
+                    break;
+                case 2f:
+                    PunchTwo();
+                    break;
+                case 3f:
+                    PunchThree();
+                    break;
+            }
         }
     }
     public void MissedPunch()
     {
         Audiosource.PlayOneShot(MissedAudio);
-        punchvar = maxdamage * 0f;
-        punchdamage = Mathf.Round(punchvar);
-        Debug.Log(punchdamage);
-        switch (Enemypicked)
+        if (HammerAttack)
         {
-            case 1f:
-                Punch();
-                break;
-            case 2f:
-                PunchTwo();
-                break;
-            case 3f:
-                PunchThree();
-                break;
+            punchdamage = 0f;
+            HammerAttackTime();
+            HammerAttack = false;
+        }
+        else
+        {
+            punchvar = maxdamage * 0f;
+            punchdamage = Mathf.Round(punchvar);
+            Debug.Log(punchdamage);
+            switch (Enemypicked)
+            {
+                case 1f:
+                    Punch();
+                    break;
+                case 2f:
+                    PunchTwo();
+                    break;
+                case 3f:
+                    PunchThree();
+                    break;
+            }
         }
     }
 
@@ -365,6 +405,62 @@ public class characterbattle : MonoBehaviour
 
     }
 
+    public void HammerAttackTime()
+    {
+        if(mlhealth != null)
+        {
+            mlhealth.recievedamage(punchdamage);
+        }
+        if (mlhealth2 != null)
+        {
+            mlhealth2.recievedamage(punchdamage);
+        }
+        if (mlhealth3 != null)
+        {
+            mlhealth3.recievedamage(punchdamage);
+        }
+
+       
+       
+        //Debug.Log(Combatmgr.punchdamage);
+
+        GameObject damagenumber = Instantiate(damagenumberprefab, new Vector3(300f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext = damagenumber.GetComponent<TextMeshProUGUI>();
+        damagenumbertext.text = punchdamage.ToString();
+        GameObject damagenumber2 = Instantiate(damagenumberprefab, new Vector3(155f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext2 = damagenumber2.GetComponent<TextMeshProUGUI>();
+        damagenumbertext2.text = punchdamage.ToString();
+        GameObject damagenumber3 = Instantiate(damagenumberprefab, new Vector3(105f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext3 = damagenumber3.GetComponent<TextMeshProUGUI>();
+        damagenumbertext3.text = punchdamage.ToString();
+        btlhand.Plymvt.playerhealth -= 1f;
+        GameObject damagenumber4 = Instantiate(damagenumberprefab, new Vector3(-165f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext4 = damagenumber4.GetComponent<TextMeshProUGUI>();
+        damagenumbertext4.text = "1";
+        damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        Camshake.ShakeEvent();
+
+        StartCoroutine(Waitingtime());
+        
+
+
+
+        if (mlhealth3.Molehealth > 0)
+        {
+            damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        }
+
+        if (mlhealth2.Molehealth > 0)
+        {
+            damagenumber2.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        }
+
+        if (mlhealth.Molehealth > 0)
+        {
+            damagenumber3.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        }
+    }
+
 
 
     public void getmlattack1()
@@ -393,5 +489,29 @@ public class characterbattle : MonoBehaviour
         ItemUi.SetActive(false);
         GameObject Healthnumber = Instantiate(Healthnumberprefab, new Vector3(-165f, 50f), Quaternion.identity);
         Healthnumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+    }
+
+    public void ToggleHammerAttack()
+    {
+        if(HammerAttack == false)
+        {
+            HammerAttack = true;
+        }
+        else
+        {
+            HammerAttack = false;
+        }
+    }
+
+    public void ToggleFlameHammerAttack()
+    {
+        if (FlameHammerAttack == false)
+        {
+            FlameHammerAttack = true;
+        }
+        else
+        {
+            FlameHammerAttack = false;
+        }
     }
 }
