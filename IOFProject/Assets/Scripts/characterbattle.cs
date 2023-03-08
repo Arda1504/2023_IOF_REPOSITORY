@@ -57,7 +57,7 @@ public class characterbattle : MonoBehaviour
     {
         Playermovement = GetComponent<playermovement>();
         CombtMenu = GameObject.Find("CombatMenu");
-        Camshake = GameObject.Find("combatcam").gameObject.GetComponent<CameraShakeScript>();
+        
         
         amountAttacked = 0;
         
@@ -93,7 +93,7 @@ public class characterbattle : MonoBehaviour
          } */
         //Debug.Log(Combatmgr.punchdamage);
         //Debug.Log(mlhealth.Molehealth);
-        
+        Camshake = GameObject.Find("combatcam").gameObject.GetComponent<CameraShakeScript>();
 
     }
 
@@ -208,6 +208,12 @@ public class characterbattle : MonoBehaviour
             HammerAttackTime();
             HammerAttack = false;
         }
+        if (FlameHammerAttack)
+        {
+            punchdamage = 2f;
+            FlameHammerAttackTime();
+            FlameHammerAttack = false;
+        }
         else
         {
             punchvar = maxdamage * 0.15f;
@@ -236,6 +242,12 @@ public class characterbattle : MonoBehaviour
             punchdamage = 2f;
             HammerAttackTime();
             HammerAttack = false;
+        }
+        if (FlameHammerAttack)
+        {
+            punchdamage = 3f;
+            FlameHammerAttackTime();
+            FlameHammerAttack = false;
         }
         else
         {
@@ -267,6 +279,12 @@ public class characterbattle : MonoBehaviour
             HammerAttackTime();
             HammerAttack = false;
         }
+        if (FlameHammerAttack)
+        {
+            punchdamage = 5f;
+            FlameHammerAttackTime();
+            FlameHammerAttack = false;
+        }
         else
         {
             punchvar = maxdamage * 0.4f;
@@ -294,6 +312,12 @@ public class characterbattle : MonoBehaviour
             punchdamage = 0f;
             HammerAttackTime();
             HammerAttack = false;
+        }
+        if (FlameHammerAttack)
+        {
+            punchdamage = 0f;
+            FlameHammerAttackTime();
+            FlameHammerAttack = false;
         }
         else
         {
@@ -442,6 +466,62 @@ public class characterbattle : MonoBehaviour
 
         StartCoroutine(Waitingtime());
         
+
+
+
+        if (mlhealth3.Molehealth > 0)
+        {
+            damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        }
+
+        if (mlhealth2.Molehealth > 0)
+        {
+            damagenumber2.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        }
+
+        if (mlhealth.Molehealth > 0)
+        {
+            damagenumber3.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        }
+    }
+
+    public void FlameHammerAttackTime()
+    {
+        if (mlhealth != null)
+        {
+            mlhealth.recievedamage(punchdamage);
+        }
+        if (mlhealth2 != null)
+        {
+            mlhealth2.recievedamage(punchdamage);
+        }
+        if (mlhealth3 != null)
+        {
+            mlhealth3.recievedamage(punchdamage);
+        }
+
+
+
+        //Debug.Log(Combatmgr.punchdamage);
+
+        GameObject damagenumber = Instantiate(damagenumberprefab, new Vector3(300f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext = damagenumber.GetComponent<TextMeshProUGUI>();
+        damagenumbertext.text = punchdamage.ToString();
+        GameObject damagenumber2 = Instantiate(damagenumberprefab, new Vector3(155f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext2 = damagenumber2.GetComponent<TextMeshProUGUI>();
+        damagenumbertext2.text = punchdamage.ToString();
+        GameObject damagenumber3 = Instantiate(damagenumberprefab, new Vector3(105f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext3 = damagenumber3.GetComponent<TextMeshProUGUI>();
+        damagenumbertext3.text = punchdamage.ToString();
+        btlhand.Plymvt.playerhealth -= 2f;
+        GameObject damagenumber4 = Instantiate(damagenumberprefab, new Vector3(-165f, 50f), Quaternion.identity);
+        TextMeshProUGUI damagenumbertext4 = damagenumber4.GetComponent<TextMeshProUGUI>();
+        damagenumbertext4.text = "2";
+        damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        Camshake.ShakeEvent();
+
+        StartCoroutine(Waitingtime());
+
 
 
 
