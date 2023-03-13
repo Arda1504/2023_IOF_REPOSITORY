@@ -50,6 +50,7 @@ public class characterbattle : MonoBehaviour
     public bool HammerAttack = false;
     public bool FlameHammerAttack = false;
     public CameraShakeScript Camshake;
+    public GameObject FlameEffect;
 
 
 
@@ -519,9 +520,10 @@ public class characterbattle : MonoBehaviour
         damagenumbertext4.text = "2";
         damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
         Camshake.ShakeEvent();
+        Instantiate(FlameEffect, new Vector3(0f, 0f, -10f), Quaternion.identity);
 
         StartCoroutine(Waitingtime());
-
+        
 
 
 

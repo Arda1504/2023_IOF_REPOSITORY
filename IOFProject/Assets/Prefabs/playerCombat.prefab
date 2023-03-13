@@ -290,3 +290,8 @@ MonoBehaviour:
   ItemUi: {fileID: 0}
   Healthnumberprefab: {fileID: 4626327141295312064, guid: d2a351f6df374ca43a54549896212dfe,
     type: 3}
+  HammerAttack: 0
+  FlameHammerAttack: 0
+  Camshake: {fileID: 0}
+  FlameEffect: {fileID: 5185167874817851878, guid: d0ef430d5b0eac040871ef8efebba063,
+    type: 3}
