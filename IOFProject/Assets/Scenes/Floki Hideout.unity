@@ -32771,11 +32771,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 106449917, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 772760718, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1688267867, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
@@ -32783,7 +32783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989568236, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4098063942778045192, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
@@ -32844,7 +32844,7 @@ PrefabInstance:
     - target: {fileID: 4098063942778045193, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4098063942778045193, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
@@ -32875,7 +32875,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1393676869}
+      objectReference: {fileID: 4098063944300193550}
     - target: {fileID: 4098063942778045193, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -32924,7 +32924,7 @@ PrefabInstance:
     - target: {fileID: 4098063942778045193, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4098063942778045193, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
@@ -33249,6 +33249,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4098063944300193550, guid: d4102a7fdeb74ac429dac680c29f18c3,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Deals damage to one target
+      objectReference: {fileID: 0}
     - target: {fileID: 4098063944499526565, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
       propertyPath: m_fontAsset
@@ -33558,6 +33563,12 @@ RectTransform:
 --- !u!1 &4098063944300193549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4098063943665133831, guid: d4102a7fdeb74ac429dac680c29f18c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4098063944300193547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4098063944300193550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 584668143, guid: d4102a7fdeb74ac429dac680c29f18c3,
     type: 3}
   m_PrefabInstance: {fileID: 4098063944300193547}
   m_PrefabAsset: {fileID: 0}
