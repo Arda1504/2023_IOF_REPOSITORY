@@ -37,6 +37,7 @@ public class playermovement : MonoBehaviour
     public GameObject HealthPopup;
     public TextMeshProUGUI HealthPopupText;
     public bool fifteenhealth = false;
+    
 
 
 
@@ -180,7 +181,10 @@ public class playermovement : MonoBehaviour
     {
         if(movement == Vector2.zero && HasHammer)
         {
+            animator.Play("Base Layer.Occam_Hammer_Quick");
+
             CanMove = false;
+            yield return new WaitForSecondsRealtime(1f);
             Camshakescrpt.ShakeEvent();
             HammerUsed();
             yield return new WaitForSecondsRealtime(1f);
