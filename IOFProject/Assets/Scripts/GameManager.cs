@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         hasAle = false;
     }
     // Start is called before the first frame update

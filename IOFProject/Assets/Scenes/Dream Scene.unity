@@ -8095,6 +8095,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4714799156676767946, guid: dcb3861579265954aa50bf6b29e64c28,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7136201888600157570, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
       propertyPath: audioSource
@@ -8190,7 +8195,8 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: b56f3659350666a4e829cdb1e1ea15af, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4714799156676767946, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}
 --- !u!82 &1215322111 stripped
 AudioSource:
@@ -8302,6 +8308,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4714799156676767946, guid: dcb3861579265954aa50bf6b29e64c28,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7136201888600157570, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
       propertyPath: audioSource
@@ -8387,7 +8398,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4714799156676767946, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}
 --- !u!82 &1245567828 stripped
 AudioSource:
@@ -9421,7 +9433,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1457178030}
   - component: {fileID: 1457178029}
-  - component: {fileID: 1457178031}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9474,18 +9485,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1457178031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457178028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa5fdb0c34bfb7646ad2a2c6f8ee3415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1485528829
 GameObject:
   m_ObjectHideFlags: 0
@@ -13592,7 +13591,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 232615492, guid: 09b74f10cbd755e439578c8c7f1819a5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09b74f10cbd755e439578c8c7f1819a5, type: 3}
 --- !u!1001 &3875845829048761540
 PrefabInstance:
