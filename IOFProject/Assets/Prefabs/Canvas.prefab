@@ -2956,7 +2956,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: This punches lol
+            m_StringArgument: Deals damage to one target
             m_BoolArgument: 1
           m_CallState: 2
   - eventID: 1
@@ -3453,6 +3453,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28bde581fbe52346a3798e55e7bfb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HammerButton: {fileID: 2030525157}
+  FlameHammerButton: {fileID: 124489549}
+  plymvt: {fileID: 0}
 --- !u!1 &4098063944281087710
 GameObject:
   m_ObjectHideFlags: 0
@@ -4049,9 +4052,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4098063944281087710}
+    - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 4098063944300193551}
+    - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ShowAttacks
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CombatCanvasScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702249433945664994, guid: a093d9293c6a46e469a9d8739b1693fb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8702249433945664995, guid: a093d9293c6a46e469a9d8739b1693fb,
         type: 3}
       propertyPath: m_LocalScale.x

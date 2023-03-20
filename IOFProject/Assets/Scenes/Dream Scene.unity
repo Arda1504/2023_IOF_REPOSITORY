@@ -2549,7 +2549,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 513206325}
+  - {fileID: 513206288}
   selectedCommands: []
   variables:
   - {fileID: 513206304}
@@ -9454,6 +9454,11 @@ MonoBehaviour:
   Charbtl: {fileID: 258790435609356685, guid: d3999ca2efc362945b533dd1e014585b, type: 3}
   hasAle: 0
   hasCoin: 0
+  Cheese: {fileID: 0}
+  Ale: {fileID: 0}
+  Mouse: {fileID: 0}
+  HealthPotion: {fileID: 0}
+  plymvt: {fileID: 0}
 --- !u!4 &1457178030
 Transform:
   m_ObjectHideFlags: 0
@@ -12173,7 +12178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Walk over an item to pick it up, then press I to view it in your inventory
+  m_text: Walk over an item to pick it up, then press "I" to view it in your inventory
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d141b66523f6e04d9c116498fea3907, type: 2}
   m_sharedMaterial: {fileID: 3371144796242119246, guid: 6d141b66523f6e04d9c116498fea3907,
@@ -13829,6 +13834,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 106449917, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 584668144, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 772760718, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688267867, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989568236, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4098063942778045192, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
       propertyPath: m_Type
