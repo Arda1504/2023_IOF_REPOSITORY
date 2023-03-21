@@ -360,6 +360,7 @@ public class characterbattle : MonoBehaviour
 
     public void Punch()
     {
+        this.anim.Play("Occam_Attack");
         // Debug.Log("punched");
         mlhealth.recievedamage(punchdamage);
         Debug.Log(mlhealth.Molehealth);
@@ -384,6 +385,7 @@ public class characterbattle : MonoBehaviour
 
     public void PunchTwo()
     {
+        this.anim.Play("Occam_Attack");
         // Debug.Log("punched");
         mlhealth2.recievedamage(punchdamage);
         Debug.Log(mlhealth2.Molehealth);
@@ -408,6 +410,7 @@ public class characterbattle : MonoBehaviour
 
     public void PunchThree()
     {
+        this.anim.Play("Occam_Attack");
         // Debug.Log("punched");
         mlhealth3.recievedamage(punchdamage);
         Debug.Log(mlhealth3.Molehealth);
