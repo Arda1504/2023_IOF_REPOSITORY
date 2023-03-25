@@ -110,6 +110,9 @@ public class characterbattle : MonoBehaviour
                 mlatk1mger.FlokiFight = true;
             }
 
+            //play animation here
+            
+
             GameObject Moleattack1holder = Instantiate(moleattack1holder, new Vector3(-3.5f, 0.36f, 0), Quaternion.identity);
             mlatk1mger.mlattackhlder = Moleattack1holder.gameObject;
             //btlhand.playerhealth -= 1f;
@@ -348,6 +351,8 @@ public class characterbattle : MonoBehaviour
 
     IEnumerator WaitingtimeTwo()
     {
+        
+        
         yield return new WaitForSecondsRealtime(3);
         GetAttacked();
     }

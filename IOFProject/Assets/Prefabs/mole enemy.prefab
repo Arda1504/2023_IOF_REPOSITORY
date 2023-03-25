@@ -94,9 +94,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3572912846972010532}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 481ef455de07feb4690dbd15ae35f2d7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 41e364fe8c4b3c14883e59a1b23ceb50, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -123,3 +123,4 @@ MonoBehaviour:
   Chbtl: {fileID: 0}
   PlayerCombatobject: {fileID: 0}
   FlokiGruntSprite: {fileID: 21300000, guid: ea81995da22269a4eaa99d1b2b455a2d, type: 3}
+  IsFloki: 0
