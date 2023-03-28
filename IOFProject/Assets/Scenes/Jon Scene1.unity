@@ -11876,12 +11876,12 @@ PrefabInstance:
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -357.9
+      value: -672.8
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.47
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -36415,6 +36415,12 @@ PrefabInstance:
       objectReference: {fileID: 1823549847}
     - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
         type: 3}
+      propertyPath: MoleBtl2
+      value: 
+      objectReference: {fileID: 8966522994838886804, guid: ce00c9fbc1047f748b78b190df72f34a,
+        type: 3}
+    - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
+        type: 3}
       propertyPath: battleui
       value: 
       objectReference: {fileID: 1518863066}
@@ -36444,6 +36450,11 @@ PrefabInstance:
       propertyPath: LeftSelect
       value: 
       objectReference: {fileID: 263275797}
+    - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
+        type: 3}
+      propertyPath: NPCBaranim
+      value: 
+      objectReference: {fileID: 9100000, guid: 553454951cd299c4eacacbe6d0a14107, type: 2}
     - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
         type: 3}
       propertyPath: RightSelect

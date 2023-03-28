@@ -44,6 +44,7 @@ public class molehealth : MonoBehaviour
         {
             if(IsFloki)
             {
+                Debug.Log("Flokidead");
                 Chbtl.EnemyDowned();
                 batlehan.KillFinalFloki();
             }
@@ -61,8 +62,8 @@ public class molehealth : MonoBehaviour
 
     public void recievedamage(float damage)
     {
-        Molehealth = Molehealth - damage;
-        if (Molehealth <= 0f)
+        this.Molehealth = this.Molehealth - damage;
+        if (this.Molehealth <= 0f)
         {
             //Destroy(mlhealth);
             Die();

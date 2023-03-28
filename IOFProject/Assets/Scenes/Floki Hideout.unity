@@ -32631,6 +32631,11 @@ PrefabInstance:
       objectReference: {fileID: 566363962}
     - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
         type: 3}
+      propertyPath: Flokianim
+      value: 
+      objectReference: {fileID: 9100000, guid: 81881c4de2b9094469ddfd55a439fc56, type: 2}
+    - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
+        type: 3}
       propertyPath: MidSelect
       value: 
       objectReference: {fileID: 1508518500}

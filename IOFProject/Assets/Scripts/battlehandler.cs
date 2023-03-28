@@ -11,6 +11,7 @@ public class battlehandler : MonoBehaviour
     [SerializeField] private Transform PlayerBattle;
     //[SerializeField] private Transform MoleBattle;
     public GameObject MoleBtl;
+    public GameObject MoleBtl2;
     public GameObject playeroverworld;
     public GameObject CloneMole;
     public GameObject CloneMoleTwo;
@@ -43,7 +44,9 @@ public class battlehandler : MonoBehaviour
     public GameObject FlokiSprite;
     public GameObject Healthtotalobject;
     public TextMeshProUGUI HealthtotalText;
-    
+    public RuntimeAnimatorController NPCBaranim;
+    public RuntimeAnimatorController Flokianim;
+
 
 
 
@@ -98,9 +101,9 @@ public class battlehandler : MonoBehaviour
     {
         //PlayeroverCam = playeroverworld.GetComponentInChildren<Camera>();
         //StartCoroutine(Victory()); uncomment this plz
-
-        LastEnemy = GameObject.Find("Floki Enemy(Clone)");
         Debug.Log(LastEnemy);
+        LastEnemy = GameObject.Find("Floki Enemy(Clone)");
+        //Debug.Log(LastEnemy);
         StartCoroutine(Victory());
 
     }
@@ -123,8 +126,9 @@ public class battlehandler : MonoBehaviour
         if (FlokiFight)
         {
             //Instantiate(MoleBattle, new Vector3(3.5f, 1), Quaternion.identity);
-            CloneMole = Instantiate(FlokiSprite, new Vector3(2f, 1), Quaternion.identity);
+            CloneMole = Instantiate(MoleBtl, new Vector3(2f, 1), Quaternion.identity);
             CloneMole.GetComponent<molehealth>().batlehan = this;
+            CloneMole.GetComponent<Animator>().runtimeAnimatorController = Flokianim;
             CloneMoleTwo = Instantiate(MoleBtl, new Vector3(4f, 1), Quaternion.identity);
             CloneMoleTwo.GetComponent<molehealth>().batlehan = this;
             
@@ -143,8 +147,10 @@ public class battlehandler : MonoBehaviour
             CloneMole.GetComponent<molehealth>().batlehan = this;
             CloneMoleTwo = Instantiate(MoleBtl, new Vector3(4f, 1), Quaternion.identity);
             CloneMoleTwo.GetComponent<molehealth>().batlehan = this;
+            CloneMoleTwo.GetComponent<Animator>().runtimeAnimatorController = NPCBaranim;
             CloneMoleThree = Instantiate(MoleBtl, new Vector3(6f, 1), Quaternion.identity);
             CloneMoleThree.GetComponent<molehealth>().batlehan = this;
+            CloneMoleThree.GetComponent<Animator>().runtimeAnimatorController = NPCBaranim;
             GameObject playerbattle = Instantiate(PlayerBattle, position, Quaternion.identity).gameObject;
             playerbattle.GetComponent<characterbattle>().mlhealth = CloneMole.GetComponent<molehealth>();
             playerbattle.GetComponent<characterbattle>().btlhand = this;
@@ -174,7 +180,11 @@ public class battlehandler : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2);
         VictoryText.gameObject.SetActive(true);
-        LastEnemy.gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
+        if(LastEnemy != null)
+        {
+            LastEnemy.gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
+        }
+        
         StopAllAudio();
         Music.PlayOneShot(VictorySound);
 
@@ -184,7 +194,11 @@ public class battlehandler : MonoBehaviour
 
 
         yield return new WaitForSecondsRealtime(3);
-        Destroy(LastEnemy);
+        if (LastEnemy != null)
+        {
+            Destroy(LastEnemy);
+        }
+            
         VictoryText.SetActive(false);
         healthcanvas.gameObject.SetActive(true);
         //Debug.Log("dead");
