@@ -258,9 +258,9 @@ public class playermovement : MonoBehaviour
 
     public void Restart()
     {
-        HideoutEntrance = GameObject.Find("ToHideOut");
-        gameObject.transform.position = HideoutEntrance.transform.position;
-        SceneManager.LoadScene("Jon Scene1");
+        //HideoutEntrance = GameObject.Find("ToHideOut");
+        //gameObject.transform.position = HideoutEntrance.transform.position;
+        SceneManager.LoadScene("Floki Hideout");
         if(fifteenhealth == true)
         {
             playerhealth = 15f;
