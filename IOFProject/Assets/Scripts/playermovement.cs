@@ -37,6 +37,7 @@ public class playermovement : MonoBehaviour
     public GameObject HealthPopup;
     public TextMeshProUGUI HealthPopupText;
     public bool fifteenhealth = false;
+    public GameObject HideoutEntrance;
     
 
 
@@ -111,6 +112,11 @@ public class playermovement : MonoBehaviour
         if (Input.GetKeyDown("2"))
         {
             UseFire();
+        }
+
+        if (Input.GetKeyDown("3"))
+        {
+            Restart();
         }
     }
 
@@ -248,6 +254,14 @@ public class playermovement : MonoBehaviour
         {
             Somethingtodestroy = null;
         }
+    }
+
+    public void Restart()
+    {
+        HideoutEntrance = GameObject.Find("ToHideOut");
+        gameObject.transform.position = HideoutEntrance.transform.position;
+        SceneManager.LoadScene("Jon Scene1");
+        
     }
 
 
