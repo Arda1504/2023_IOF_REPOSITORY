@@ -570,6 +570,16 @@ public class characterbattle : MonoBehaviour
         TextMeshProUGUI damagenumbertext = damagenumber.GetComponent<TextMeshProUGUI>();
         damagenumbertext.text = mlatk1mger.punchdamage.ToString();
         damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+
+        if(btlhand.Plymvt.playerhealth <= 0)
+        {
+            if(btlhand.FlokiFight)
+            {
+                btlhand.StartLostFloki();
+                //btlhand.Plymvt.Restart();
+            }
+            
+        }
         //CombtMenu.gameObject.SetActive(true);
     }
 

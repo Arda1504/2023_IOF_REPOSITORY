@@ -46,6 +46,7 @@ public class battlehandler : MonoBehaviour
     public TextMeshProUGUI HealthtotalText;
     public RuntimeAnimatorController NPCBaranim;
     public RuntimeAnimatorController Flokianim;
+    public GameObject Gameoverbanner;
 
 
 
@@ -224,5 +225,18 @@ public class battlehandler : MonoBehaviour
         CloneMoleTwo.GetComponent<molehealth>().FlokiGrunt();
         CloneMoleThree.GetComponent<molehealth>().FlokiGrunt();
         CloneMole.GetComponent<molehealth>().FlokiHimself();
+    }
+    
+    IEnumerator LostFloki()
+    {
+        GameObject CurrentBanner = Instantiate(Gameoverbanner);
+        yield return new WaitForSecondsRealtime(2);
+        Destroy(CurrentBanner);
+        Plymvt.Restart();
+    }
+
+    public void StartLostFloki()
+    {
+        StartCoroutine(LostFloki());
     }
 }

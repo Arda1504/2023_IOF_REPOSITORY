@@ -32698,6 +32698,12 @@ PrefabInstance:
       objectReference: {fileID: 452137371}
     - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
         type: 3}
+      propertyPath: Gameoverbanner
+      value: 
+      objectReference: {fileID: 3668888871765957566, guid: cae9f3d657866ab49bf35fd0c5766c1b,
+        type: 3}
+    - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
+        type: 3}
       propertyPath: playeroverworld
       value: 
       objectReference: {fileID: 1171501956}

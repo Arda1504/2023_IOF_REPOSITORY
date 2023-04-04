@@ -261,6 +261,14 @@ public class playermovement : MonoBehaviour
         HideoutEntrance = GameObject.Find("ToHideOut");
         gameObject.transform.position = HideoutEntrance.transform.position;
         SceneManager.LoadScene("Jon Scene1");
+        if(fifteenhealth == true)
+        {
+            playerhealth = 15f;
+        }
+        else
+        {
+            playerhealth = 10f;
+        }
         
     }
 
