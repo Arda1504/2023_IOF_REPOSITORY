@@ -333,13 +333,18 @@ PrefabInstance:
     - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
       propertyPath: Music
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
       propertyPath: black
       value: 
       objectReference: {fileID: 1240255787}
+    - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
+        type: 3}
+      propertyPath: StopMusic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
       propertyPath: TeleportTo
@@ -415,6 +420,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7560370172973124278, guid: dcb3861579265954aa50bf6b29e64c28,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a402aa7237c14a4e84a8c2769ee56bc, type: 3}
     m_RemovedComponents:
     - {fileID: 4714799156676767946, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}
@@ -12014,12 +12024,12 @@ PrefabInstance:
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -392.6
+      value: -229.88
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -2.89
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -33841,7 +33851,7 @@ PrefabInstance:
     - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
       propertyPath: Music
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
@@ -33851,7 +33861,7 @@ PrefabInstance:
     - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
       propertyPath: StopMusic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7560370172973124275, guid: dcb3861579265954aa50bf6b29e64c28,
         type: 3}
@@ -33928,6 +33938,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7560370172973124278, guid: dcb3861579265954aa50bf6b29e64c28,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a402aa7237c14a4e84a8c2769ee56bc, type: 3}
     m_RemovedComponents:
     - {fileID: 4714799156676767946, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dcb3861579265954aa50bf6b29e64c28, type: 3}

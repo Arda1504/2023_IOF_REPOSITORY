@@ -103,6 +103,11 @@ public class TeleportScript : MonoBehaviour
                 NewMusic.Play();
             }
         }
+
+        if (StopMusic)
+        {
+            StopAllAudio();
+        }
         Playerobject.transform.position = new Vector3(TeleportTo.transform.position.x, TeleportTo.transform.position.y, TeleportTo.transform.position.z);
 
 
