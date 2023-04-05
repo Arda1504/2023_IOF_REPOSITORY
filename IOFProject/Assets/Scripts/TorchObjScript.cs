@@ -34,8 +34,8 @@ public class TorchObjScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "FireObject")
         {
-            GetComponent<SpriteRenderer>().color = Color.red;
-            if(CampWood)
+            Instantiate(Flamebehind, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1, gameObject.transform.position.z), Quaternion.identity);
+            if (CampWood)
             {
                 EmptyFieldsEvent();
             }
