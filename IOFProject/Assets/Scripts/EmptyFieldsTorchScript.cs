@@ -23,7 +23,7 @@ public class EmptyFieldsTorchScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "FireObject")
         {
-            Instantiate(FlameBehind, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(FlameBehind, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 2, gameObject.transform.position.z), Quaternion.identity);
             Spawnscrpt.TorchLit();
 
         }
