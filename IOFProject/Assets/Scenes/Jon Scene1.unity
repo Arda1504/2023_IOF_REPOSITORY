@@ -12740,7 +12740,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d47f1b304b1dfdb439a2baa423d0d0e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c79b3d7d361f4db458f4bd96a31741a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12795,7 +12795,7 @@ MonoBehaviour:
   ExitTeloport: {fileID: 1999042447}
   StoneExTelo: {fileID: 1693993163}
   StoneEX: {fileID: 527879411}
-  StoneInt2: {fileID: 21300000, guid: 43c40bae57a62fe48a19a286b5229e38, type: 3}
+  StoneInt2: {fileID: 21300000, guid: 1fbcf3214600c5d49a87037516f00f6b, type: 3}
   StoneEX2: {fileID: 21300000, guid: 8504a14508277b141877ffd525b7d06d, type: 3}
 --- !u!1 &919097472
 GameObject:
