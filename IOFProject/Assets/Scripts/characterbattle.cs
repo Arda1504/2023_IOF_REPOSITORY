@@ -209,13 +209,15 @@ public class characterbattle : MonoBehaviour
         if (HammerAttack)
         {
             punchdamage = 1f;
-            HammerAttackTime();
+            //HammerAttackTime();
+            this.anim.Play("HammerFightAnim");
             HammerAttack = false;
         }
         if (FlameHammerAttack)
         {
             punchdamage = 2f;
-            FlameHammerAttackTime();
+            //FlameHammerAttackTime();
+            this.anim.Play("FireHammerFightAnim");
             FlameHammerAttack = false;
         }
         else
@@ -244,13 +246,17 @@ public class characterbattle : MonoBehaviour
         if (HammerAttack)
         {
             punchdamage = 2f;
-            HammerAttackTime();
+            //HammerAttackTime();
+            this.anim.Play("HammerFightAnim");
+
             HammerAttack = false;
         }
         if (FlameHammerAttack)
         {
             punchdamage = 3f;
-            FlameHammerAttackTime();
+            //FlameHammerAttackTime();
+            this.anim.Play("FireHammerFightAnim");
+
             FlameHammerAttack = false;
         }
         else
@@ -280,13 +286,17 @@ public class characterbattle : MonoBehaviour
         if (HammerAttack)
         {
             punchdamage = 3f;
-            HammerAttackTime();
+            //HammerAttackTime();
+            this.anim.Play("HammerFightAnim");
+
             HammerAttack = false;
         }
         if (FlameHammerAttack)
         {
             punchdamage = 5f;
-            FlameHammerAttackTime();
+            //FlameHammerAttackTime();
+            this.anim.Play("FireHammerFightAnim");
+
             FlameHammerAttack = false;
         }
         else
@@ -314,13 +324,17 @@ public class characterbattle : MonoBehaviour
         if (HammerAttack)
         {
             punchdamage = 0f;
-            HammerAttackTime();
+            //HammerAttackTime();
+            this.anim.Play("HammerFightAnim");
+
             HammerAttack = false;
         }
         if (FlameHammerAttack)
         {
             punchdamage = 0f;
-            FlameHammerAttackTime();
+            //FlameHammerAttackTime();
+            this.anim.Play("FireHammerFightAnim");
+
             FlameHammerAttack = false;
         }
         else
