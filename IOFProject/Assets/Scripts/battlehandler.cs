@@ -239,4 +239,25 @@ public class battlehandler : MonoBehaviour
     {
         StartCoroutine(LostFloki());
     }
+
+    IEnumerator LostTutorial()
+    {
+        GameObject CurrentBanner = Instantiate(Gameoverbanner);
+        yield return new WaitForSecondsRealtime(2);
+        Destroy(CurrentBanner);
+        Application.Quit();
+
+    }
+
+    public void StartLostTutorial()
+    {
+        StartCoroutine(LostTutorial());
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+
 }

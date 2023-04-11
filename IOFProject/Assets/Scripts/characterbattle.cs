@@ -578,6 +578,10 @@ public class characterbattle : MonoBehaviour
                 btlhand.StartLostFloki();
                 //btlhand.Plymvt.Restart();
             }
+            else
+            {
+                btlhand.StartLostTutorial();
+            }
             
         }
         //CombtMenu.gameObject.SetActive(true);
