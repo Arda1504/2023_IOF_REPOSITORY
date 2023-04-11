@@ -12577,7 +12577,7 @@ PrefabInstance:
     - target: {fileID: 8871614441348514169, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: HasHammer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514169, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -12607,12 +12607,12 @@ PrefabInstance:
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -565.77
+      value: -673.45
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.49
+      value: -2.28
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
