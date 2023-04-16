@@ -114,10 +114,12 @@ public class playermovement : MonoBehaviour
             UseFire();
         }
 
-        if (Input.GetKeyDown("3"))
+       /* if (Input.GetKeyDown("3"))
         {
             Restart();
-        }
+        } */
+
+        
     }
 
     
@@ -180,6 +182,21 @@ public class playermovement : MonoBehaviour
         }
         
        
+    }
+
+    public void StopMoving()
+    {
+        moveSpeed = 0;
+
+        animator.SetFloat("Horizontal", 0);
+        animator.SetFloat("Vertical", 0);
+
+    }
+
+
+    public void MoveAgain()
+    {
+        moveSpeed = 5;
     }
     
 
