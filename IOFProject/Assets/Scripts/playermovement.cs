@@ -262,6 +262,7 @@ public class playermovement : MonoBehaviour
         {
             GetHeart();
             Destroy(collision.gameObject);
+            StopMoving();
         }
     }
 
