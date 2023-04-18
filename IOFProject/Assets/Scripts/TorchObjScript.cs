@@ -16,6 +16,7 @@ public class TorchObjScript : MonoBehaviour
     public GameObject Flamebehind;
     public GameObject Flamenormal;
     public Flowchart Flwchart;
+    public bool DidEmptyFieldsEvent = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +36,10 @@ public class TorchObjScript : MonoBehaviour
         if (collision.gameObject.tag == "FireObject")
         {
             Instantiate(Flamebehind, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1, gameObject.transform.position.z), Quaternion.identity);
-            if (CampWood)
+            if (CampWood && DidEmptyFieldsEvent == false)
             {
                 EmptyFieldsEvent();
+                DidEmptyFieldsEvent = true;
             }
         }
     }
