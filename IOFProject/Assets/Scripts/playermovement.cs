@@ -237,6 +237,11 @@ public class playermovement : MonoBehaviour
             HealthPopupText.SetText("You got 1 heart out of 3. Collect all 3 for an increase in max health");
         }
 
+        if(heartamount == 2)
+        {
+            MoveAgain();
+        }
+
         if (heartamount == 3)
         {
             HealthPopup.SetActive(true);
@@ -264,9 +269,10 @@ public class playermovement : MonoBehaviour
 
         if(collision.gameObject.tag == "Heart")
         {
+            StopMoving();
             GetHeart();
             Destroy(collision.gameObject);
-            StopMoving();
+            
         }
     }
 

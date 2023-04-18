@@ -12776,7 +12776,7 @@ PrefabInstance:
     - target: {fileID: 8871614441348514169, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: HasLamp
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514169, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -12791,7 +12791,7 @@ PrefabInstance:
     - target: {fileID: 8871614441348514169, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: HasHammer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514169, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -12826,12 +12826,12 @@ PrefabInstance:
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -565.25
+      value: -564.98
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.59
+      value: 1.57
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -27585,7 +27585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -69.88764
+    x: -68.069466
     y: -51.79648
     width: 169.99988
     height: 40
@@ -27594,7 +27594,7 @@ MonoBehaviour:
   itemId: 77
   blockName: OfficialLookingMan1
   description: 
-  eventHandler: {fileID: 1823551673}
+  eventHandler: {fileID: 1823551730}
   commandList:
   - {fileID: 1823551547}
   - {fileID: 1823551364}
@@ -40607,7 +40607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 480
   indentLevel: 0
---- !u!114 &1823551673
+--- !u!114 &1823551730
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
