@@ -88,9 +88,11 @@ public class playermovement : MonoBehaviour
         {
             facingRight = false;
         }
-       
 
-        if(Input.GetKeyDown("v"))
+        animator.SetFloat("speedmax", moveSpeed);
+
+
+        if (Input.GetKeyDown("v"))
         {
             if(HasTunic)
             {
@@ -190,7 +192,9 @@ public class playermovement : MonoBehaviour
 
         animator.SetFloat("Horizontal", 0);
         animator.SetFloat("Vertical", 0);
-
+        movement.x = 0;
+        movement.y = 0;
+        animator.SetFloat("speed", 0);
     }
 
 
