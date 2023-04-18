@@ -47,6 +47,8 @@ public class battlehandler : MonoBehaviour
     public RuntimeAnimatorController NPCBaranim;
     public RuntimeAnimatorController Flokianim;
     public GameObject Gameoverbanner;
+    public GameObject TavernBackground;
+    public Sprite EmptyBackground;
 
 
 
@@ -257,6 +259,11 @@ public class battlehandler : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ChangeTavernBackground()
+    {
+        TavernBackground.gameObject.GetComponent<SpriteRenderer>().sprite = EmptyBackground;
     }
 
 
