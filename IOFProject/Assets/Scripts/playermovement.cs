@@ -38,6 +38,7 @@ public class playermovement : MonoBehaviour
     public TextMeshProUGUI HealthPopupText;
     public bool fifteenhealth = false;
     public GameObject HideoutEntrance;
+    public bool tunicon = false;
     
 
 
@@ -157,11 +158,13 @@ public class playermovement : MonoBehaviour
     public void ChangeTunic()
     {
         animator.runtimeAnimatorController = SportTunic;
+        tunicon = true;
     }
 
     public void NormalTunic()
     {
         animator.runtimeAnimatorController = NormalAnimController;
+        tunicon = false;
     }
 
     public void GetLamp()
@@ -208,6 +211,12 @@ public class playermovement : MonoBehaviour
     {
         if(movement == Vector2.zero && HasHammer)
         {
+            if(tunicon)
+            {
+                animator.runtimeAnimatorController = NormalAnimController;
+                tunicon = false;
+            }
+
             animator.Play("Base Layer.Occam_Hammer_Quick");
 
             CanMove = false;

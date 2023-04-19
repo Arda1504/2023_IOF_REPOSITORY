@@ -51,6 +51,7 @@ public class TorchObjScript : MonoBehaviour
 
     IEnumerator EmptyFieldsStart()
     {
+        plymvt.StopMoving();
         plymvt.CanMove = false;
         yield return new WaitForSecondsRealtime(1);
         Instantiate(Flamebehind, new Vector3(BushBehind1.transform.position.x, BushBehind1.transform.position.y + 1, BushBehind1.transform.position.z), Quaternion.identity);
@@ -63,6 +64,7 @@ public class TorchObjScript : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         Instantiate(Flamenormal, new Vector3(Bush4.transform.position.x, Bush4.transform.position.y + 1, Bush4.transform.position.z), Quaternion.identity);
         Flwchart.SendFungusMessage("FieldsReaction");
+        plymvt.MoveAgain();
         plymvt.CanMove = true;
 
     }
