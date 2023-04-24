@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 7907766609311751979}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 481ef455de07feb4690dbd15ae35f2d7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 225f9802f1d27b34299c41df4083dcfa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -122,3 +122,5 @@ MonoBehaviour:
   batlehan: {fileID: 0}
   Chbtl: {fileID: 0}
   PlayerCombatobject: {fileID: 0}
+  FlokiGruntSprite: {fileID: 0}
+  IsFloki: 0
