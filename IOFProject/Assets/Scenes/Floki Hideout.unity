@@ -33294,6 +33294,11 @@ PrefabInstance:
       objectReference: {fileID: 1823549847}
     - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
         type: 3}
+      propertyPath: KragAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: 225f9802f1d27b34299c41df4083dcfa, type: 2}
+    - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
+        type: 3}
       propertyPath: battleui
       value: 
       objectReference: {fileID: 1518863066}
@@ -33349,6 +33354,11 @@ PrefabInstance:
       propertyPath: VictoryText
       value: 
       objectReference: {fileID: 1989568235}
+    - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
+        type: 3}
+      propertyPath: Flaviousanim
+      value: 
+      objectReference: {fileID: 9100000, guid: 770772b1dffe7ed4facfd699e4bdc328, type: 2}
     - target: {fileID: 2452529061131740683, guid: 75b05680507f77046955636ea0d00c0e,
         type: 3}
       propertyPath: VictorySound

@@ -49,6 +49,8 @@ public class battlehandler : MonoBehaviour
     public GameObject Gameoverbanner;
     public GameObject TavernBackground;
     public Sprite EmptyBackground;
+    public RuntimeAnimatorController KragAnim;
+    public RuntimeAnimatorController Flaviousanim;
 
 
 
@@ -132,12 +134,15 @@ public class battlehandler : MonoBehaviour
             CloneMole = Instantiate(MoleBtl, new Vector3(2f, 1), Quaternion.identity);
             CloneMole.GetComponent<molehealth>().batlehan = this;
             CloneMole.GetComponent<Animator>().runtimeAnimatorController = Flokianim;
+
             CloneMoleTwo = Instantiate(MoleBtl, new Vector3(4f, 1), Quaternion.identity);
             CloneMoleTwo.GetComponent<molehealth>().batlehan = this;
-            
+            CloneMoleTwo.GetComponent<Animator>().runtimeAnimatorController = Flaviousanim;
+
             CloneMoleThree = Instantiate(MoleBtl, new Vector3(6f, 1), Quaternion.identity);
             CloneMoleThree.GetComponent<molehealth>().batlehan = this;
-            
+            CloneMoleThree.GetComponent<Animator>().runtimeAnimatorController = KragAnim;
+
             GameObject playerbattle = Instantiate(PlayerBattle, position, Quaternion.identity).gameObject;
             playerbattle.GetComponent<characterbattle>().mlhealth = CloneMole.GetComponent<molehealth>();
             playerbattle.GetComponent<characterbattle>().btlhand = this;
