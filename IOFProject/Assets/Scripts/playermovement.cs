@@ -193,17 +193,15 @@ public class playermovement : MonoBehaviour
     {
         moveSpeed = 0;
 
-        animator.SetFloat("Horizontal", 0);
-        animator.SetFloat("Vertical", 0);
-        movement.x = 0;
-        movement.y = 0;
-        animator.SetFloat("speed", 0);
+        
     }
 
 
     public void MoveAgain()
     {
         moveSpeed = 5;
+
+        
     }
     
 
