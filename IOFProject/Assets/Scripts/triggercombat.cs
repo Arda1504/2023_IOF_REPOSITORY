@@ -41,10 +41,10 @@ public class triggercombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(Input.GetKeyDown("j"))
+         if(Input.GetKeyDown("j"))
         {
             StartCoroutine(CombatTransition());
-        } */
+        } 
         
     }
 

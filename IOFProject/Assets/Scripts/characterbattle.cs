@@ -119,6 +119,7 @@ public class characterbattle : MonoBehaviour
             Debug.Log("Attacked");
             //Debug.Log(btlhand.playerhealth);
             amountAttacked++;
+           
             if (EnemyAmount != amountAttacked)
             {
                 StartCoroutine(WaitingtimeTwo());
@@ -145,6 +146,46 @@ public class characterbattle : MonoBehaviour
 
 
 
+    }
+
+    public void Attackanims()
+    {
+        switch (amountAttacked)
+        {
+            case 1:
+                if (btlhand.CloneMole != null)
+                {
+                    btlhand.CloneMole.GetComponent<Animator>().Play("Attack");
+                }
+                else if (btlhand.CloneMoleTwo != null)
+                {
+                    btlhand.CloneMoleTwo.GetComponent<Animator>().Play("Attack");
+                }
+                else if (btlhand.CloneMoleThree != null)
+                {
+                    btlhand.CloneMoleThree.GetComponent<Animator>().Play("Attack");
+                }
+                break;
+            case 2:
+               
+                if (btlhand.CloneMoleTwo != null)
+                {
+                    btlhand.CloneMoleTwo.GetComponent<Animator>().Play("Attack");
+                }
+                else if (btlhand.CloneMoleThree != null)
+                {
+                    btlhand.CloneMoleThree.GetComponent<Animator>().Play("Attack");
+                }
+                break;
+            case 0:
+
+                if (btlhand.CloneMoleThree != null)
+                {
+                    btlhand.CloneMoleThree.GetComponent<Animator>().Play("Attack");
+                }
+                break;
+
+        }
     }
 
     public void Setup(bool isPlayer)
@@ -584,8 +625,10 @@ public class characterbattle : MonoBehaviour
         TextMeshProUGUI damagenumbertext = damagenumber.GetComponent<TextMeshProUGUI>();
         damagenumbertext.text = mlatk1mger.punchdamage.ToString();
         damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+        Attackanims();
 
-        if(btlhand.Plymvt.playerhealth <= 0)
+
+        if (btlhand.Plymvt.playerhealth <= 0)
         {
             if(btlhand.FlokiFight)
             {
