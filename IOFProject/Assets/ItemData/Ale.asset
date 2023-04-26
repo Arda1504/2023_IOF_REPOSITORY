@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Cold Ale
   itemDescription: Not even close to the best ale in the city, but this ain't exactly
     a noble establishment!
-  itemSprite: {fileID: 21300000, guid: 78bf1c29b79225c42a23be261738aa19, type: 3}
+  itemSprite: {fileID: 728896616, guid: ce136541966378343b8ceca8db2196e0, type: 3}
