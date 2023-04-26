@@ -249,20 +249,23 @@ public class characterbattle : MonoBehaviour
         Audiosource.PlayOneShot(OkAudio);
         if (HammerAttack)
         {
+            Debug.Log("Hammer1");
             punchdamage = 1f;
             //HammerAttackTime();
             this.anim.Play("HammerFightAnim");
             HammerAttack = false;
+            Debug.Log("Hammer3");
         }
-        if (FlameHammerAttack)
+        else if (FlameHammerAttack)
         {
             punchdamage = 2f;
             //FlameHammerAttackTime();
             this.anim.Play("FireHammerFightAnim");
             FlameHammerAttack = false;
         }
-        else
+        else if (HammerAttack == false && FlameHammerAttack == false)
         {
+            Debug.Log("Hammer2");
             punchvar = maxdamage * 0.15f;
             punchdamage = Mathf.Round(punchvar);
             Debug.Log(punchdamage);
@@ -286,13 +289,15 @@ public class characterbattle : MonoBehaviour
         Audiosource.PlayOneShot(OkAudio);
         if (HammerAttack)
         {
+            Debug.Log("Hammer1");
             punchdamage = 2f;
             //HammerAttackTime();
             this.anim.Play("HammerFightAnim");
 
             HammerAttack = false;
+            Debug.Log("Hammer3");
         }
-        if (FlameHammerAttack)
+        else if (FlameHammerAttack)
         {
             punchdamage = 3f;
             //FlameHammerAttackTime();
@@ -300,8 +305,9 @@ public class characterbattle : MonoBehaviour
 
             FlameHammerAttack = false;
         }
-        else
+        else if (HammerAttack == false && FlameHammerAttack == false)
         {
+            Debug.Log("Hammer2");
             punchvar = maxdamage * 0.3f;
         punchdamage = Mathf.Round(punchvar);
         Debug.Log(punchdamage);
@@ -326,13 +332,15 @@ public class characterbattle : MonoBehaviour
         Audiosource.PlayOneShot(PerfectAudio);
         if (HammerAttack)
         {
+            Debug.Log("Hammer1");
             punchdamage = 3f;
             //HammerAttackTime();
             this.anim.Play("HammerFightAnim");
 
             HammerAttack = false;
+            Debug.Log("Hammer3");
         }
-        if (FlameHammerAttack)
+        else if (FlameHammerAttack)
         {
             punchdamage = 5f;
             //FlameHammerAttackTime();
@@ -340,8 +348,9 @@ public class characterbattle : MonoBehaviour
 
             FlameHammerAttack = false;
         }
-        else
+        else if (HammerAttack == false && FlameHammerAttack == false)
         {
+            Debug.Log("Hammer2");
             punchvar = maxdamage * 0.4f;
             punchdamage = Mathf.Round(punchvar);
             Debug.Log(punchdamage);
@@ -533,17 +542,17 @@ public class characterbattle : MonoBehaviour
 
 
 
-        if (mlhealth3.Molehealth > 0)
+        if (mlhealth3.Molehealth > 0 && mlhealth3 != null)
         {
             damagenumber.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
         }
 
-        if (mlhealth2.Molehealth > 0)
+        if (mlhealth2.Molehealth > 0 && mlhealth2 != null)
         {
             damagenumber2.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
         }
 
-        if (mlhealth.Molehealth > 0)
+        if (mlhealth.Molehealth > 0 && mlhealth != null)
         {
             damagenumber3.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
         }
