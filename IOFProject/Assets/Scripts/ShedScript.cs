@@ -13,6 +13,7 @@ public class ShedScript : MonoBehaviour
     public GameObject StoneEX;
     public Sprite StoneInt2;
     public Sprite StoneEX2;
+    public AudioSource Explode;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class ShedScript : MonoBehaviour
     IEnumerator HammerTime()
     {
         Instantiate(SmokeEffect, SmokeSpawn.transform.position, Quaternion.identity);
+        Explode.Play();
         yield return new WaitForSecondsRealtime(1);
 
         this.gameObject.GetComponent<SpriteRenderer>().sprite = StoneInt2;

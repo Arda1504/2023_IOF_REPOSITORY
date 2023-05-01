@@ -30,6 +30,7 @@ public class PickupItem : MonoBehaviour
             GameManager.instance.AddItem(itemData);
             if (itemData.itemName == "Ragged Shirt")
             {
+                other.gameObject.GetComponent<playermovement>().StopMoving();
                 Flowchart.SetBooleanVariable("Shirt", true);
                 Popup.gameObject.SetActive(true);
                 Plymvmt.HasTunic = true;
