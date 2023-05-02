@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public Item Mouse;
     public Item HealthPotion;
     public playermovement plymvt;
+    public GameObject NoPotionText;
     private void Awake()
     {
         if(instance == null)
@@ -34,11 +35,20 @@ public class GameManager : MonoBehaviour
         }
         //DontDestroyOnLoad(gameObject);
         hasAle = false;
+        
     }
     // Start is called before the first frame update
     void Start()
     {
         DisplayItems();
+        NoPotionText = GameObject.Find("NoPotionText");
+        NoPotionText.SetActive(false);
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        NoPotionText = GameObject.Find("NoPotionText");
+        NoPotionText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -161,6 +171,8 @@ public class GameManager : MonoBehaviour
 
     public void HealthPotionCombat()
     {
+        
+
         if (instance.items.Contains(HealthPotion))
         {
             Debug.Log("HealthTime");
@@ -170,7 +182,18 @@ public class GameManager : MonoBehaviour
             Charbtl.WaitingTimeStartItemUse();
             
         }
+        else
+        {
+            StartCoroutine(NoPotions());
+        }
 
+    }
+
+    IEnumerator NoPotions()
+    {
+        NoPotionText.SetActive(true);
+        yield return new WaitForSecondsRealtime(2);
+        NoPotionText.SetActive(false);
     }
 
     

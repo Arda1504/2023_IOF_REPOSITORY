@@ -12825,12 +12825,12 @@ PrefabInstance:
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -564.67
+      value: -564.56
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.67
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 8871614441348514171, guid: 040b03807980b1e41bfbfd28ee99aa4d,
         type: 3}
@@ -22217,6 +22217,7 @@ MonoBehaviour:
   Mouse: {fileID: 11400000, guid: 3849afad33db10f47b8c64a47d45524d, type: 2}
   HealthPotion: {fileID: 11400000, guid: 15fdd3c678b13294087bb8c88e9fbdec, type: 2}
   plymvt: {fileID: 1171501961}
+  NoPotionText: {fileID: 0}
 --- !u!4 &1457178030
 Transform:
   m_ObjectHideFlags: 0
@@ -27729,7 +27730,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -68.069466
-    y: -49.056755
+    y: -51.79648
     width: 163.69856
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -46475,6 +46476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758066365238435041, guid: d4102a7fdeb74ac429dac680c29f18c3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}

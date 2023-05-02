@@ -11732,6 +11732,7 @@ MonoBehaviour:
   StoneEX: {fileID: 1747667948}
   StoneInt2: {fileID: 21300000, guid: 5f1a19ab26347034b93f524823122a16, type: 3}
   StoneEX2: {fileID: 21300000, guid: 5940055ef31ff574ea8bce2319288934, type: 3}
+  Explode: {fileID: 0}
 --- !u!1 &919097472
 GameObject:
   m_ObjectHideFlags: 0
@@ -18229,6 +18230,7 @@ MonoBehaviour:
   Mouse: {fileID: 11400000, guid: 3849afad33db10f47b8c64a47d45524d, type: 2}
   HealthPotion: {fileID: 0}
   plymvt: {fileID: 0}
+  NoPotionText: {fileID: 0}
 --- !u!4 &1457178030
 Transform:
   m_ObjectHideFlags: 0
@@ -34468,11 +34470,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 106449917, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 772760718, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1688267867, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
@@ -34480,7 +34482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989568236, guid: d4102a7fdeb74ac429dac680c29f18c3, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098063942778045192, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
@@ -35247,6 +35249,11 @@ PrefabInstance:
     - target: {fileID: 4098063944614207064, guid: d4102a7fdeb74ac429dac680c29f18c3,
         type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758066365238435041, guid: d4102a7fdeb74ac429dac680c29f18c3,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
