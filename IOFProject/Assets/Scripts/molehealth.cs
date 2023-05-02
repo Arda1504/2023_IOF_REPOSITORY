@@ -82,13 +82,13 @@ public class molehealth : MonoBehaviour
 
     public void FlokiGrunt()
     {
-        Molehealth = 4f;
+        Molehealth = 6f;
         this.gameObject.GetComponent<SpriteRenderer>().sprite = FlokiGruntSprite;
     }
 
     public void FlokiHimself()
     {
-        Molehealth = 8f;
+        Molehealth = 9f;
         IsFloki = true;
     }
 }
